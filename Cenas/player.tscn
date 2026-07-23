@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b8d8rtnjefle4"]
+
+[ext_resource type="Script" uid="uid://uixqhr60ida5" path="res://player.gd" id="1_pmvhq"]
+[ext_resource type="Texture2D" uid="uid://bsmvsikfgxueu" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 01.png" id="2_iersn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_58g0o"]
+size = Vector2(53, 85)
+
+[node name="Player" type="CharacterBody2D" unique_id=1437462318]
+script = ExtResource("1_pmvhq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=543023698]
+position = Vector2(171, 520)
+scale = Vector2(3.35, 3.35)
+texture = ExtResource("2_iersn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1411184284]
+position = Vector2(171.5, 516.5)
+shape = SubResource("RectangleShape2D_58g0o")

@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://v6sp4bpoc2gw"]
+
+[ext_resource type="PackedScene" uid="uid://b8d8rtnjefle4" path="res://Cenas/player.tscn" id="1_i8edm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_58g0o"]
+size = Vector2(915, 20)
+
+[node name="Fase" type="Node2D" unique_id=1067228587]
+
+[node name="Chao" type="StaticBody2D" parent="." unique_id=515014197]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chao" unique_id=886904833]
+position = Vector2(450, 635)
+shape = SubResource("RectangleShape2D_58g0o")
+
+[node name="Player" parent="." unique_id=1437462318 instance=ExtResource("1_i8edm")]
