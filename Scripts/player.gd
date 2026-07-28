@@ -11,11 +11,14 @@ var direction: float
 
 func _process(delta):
 	animate()
+	mudarADirecaoDoPersonagem()
+	
+func mudarADirecaoDoPersonagem():
 	if velocity.x > 0:
 		$Sprite2D.flip_h = false
 	if velocity.x < 0:
 		$Sprite2D.flip_h = true
-		
+	
 func animate():
 	if velocity.y > 0 and not is_on_floor():
 		animation.play("Fall")
@@ -35,9 +38,9 @@ func _physics_process(delta: float) -> void:
 	mover()
 	
 func _input(event: InputEvent):
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	if Input.is_action_just_pressed("pular") and is_on_floor():
 		jump()
-	direction = Input.get_axis("ui_left", "ui_right")
+	direction = Input.get_axis("esquerda", "direita")
 	
 func mover():
 		velocity.x = direction * speed
