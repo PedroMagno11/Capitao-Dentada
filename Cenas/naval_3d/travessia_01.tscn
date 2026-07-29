@@ -1,6 +1,17 @@
 [gd_scene format=3 uid="uid://c7mgblruqajmt"]
 
-[ext_resource type="PackedScene" uid="uid://dbsncivmtwqdi" path="res://Assets/naval_3d/models_glb/boat-row-large.glb" id="1_e0u37"]
+[ext_resource type="PackedScene" uid="uid://b0tfe1yhywmte" path="res://Cenas/naval_3d/bote_jogador.tscn" id="1_e0u37"]
+[ext_resource type="PackedScene" uid="uid://dqlhxljiwk8l4" path="res://Assets/naval_3d/models_glb/palm-bend.glb" id="2_j7631"]
+[ext_resource type="PackedScene" uid="uid://c7bp6mqpnmiud" path="res://Assets/naval_3d/models_glb/patch-grass-foliage.glb" id="3_uvodn"]
+[ext_resource type="PackedScene" uid="uid://1eeo8bpxn6h2" path="res://Assets/naval_3d/models_glb/patch-sand.glb" id="4_3ephv"]
+[ext_resource type="PackedScene" uid="uid://g35g3e7pi4he" path="res://Assets/naval_3d/models_glb/palm-detailed-straight.glb" id="5_oxkd4"]
+[ext_resource type="PackedScene" uid="uid://d5i4gkqm8pfd" path="res://Assets/naval_3d/models_glb/hole.glb" id="6_7ejg5"]
+[ext_resource type="PackedScene" uid="uid://by04abahwci8x" path="res://Assets/naval_3d/models_glb/grass-plant.glb" id="7_rinqg"]
+[ext_resource type="PackedScene" uid="uid://fpqf88c5rckg" path="res://Assets/naval_3d/models_glb/grass-patch.glb" id="8_357qt"]
+[ext_resource type="PackedScene" uid="uid://bmyyobbqrtkx" path="res://Assets/naval_3d/models_glb/flag-high-pennant.glb" id="9_lwasc"]
+[ext_resource type="PackedScene" uid="uid://c4lvpbimranin" path="res://Assets/naval_3d/models_glb/rocks-a.glb" id="10_4gr3m"]
+[ext_resource type="PackedScene" uid="uid://ry1347ms05m8" path="res://Assets/naval_3d/models_glb/rocks-sand-c.glb" id="11_cv3ii"]
+[ext_resource type="PackedScene" uid="uid://djioaqu6k4gmn" path="res://Assets/naval_3d/models_glb/rocks-c.glb" id="12_phd5b"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_e0u37"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -21,9 +32,6 @@ roughness = 0.25
 [sub_resource type="PlaneMesh" id="PlaneMesh_sb1gb"]
 size = Vector2(100, 100)
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_x5pgy"]
-size = Vector3(2, 0.8, 1)
-
 [node name="Travessia01" type="Node3D" unique_id=102362562]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1104447254]
@@ -34,16 +42,49 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
 material_override = SubResource("StandardMaterial3D_blkgo")
 mesh = SubResource("PlaneMesh_sb1gb")
 
-[node name="CameraPrincipal" type="Camera3D" parent="." unique_id=1292041068]
-transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 12, 12)
-current = true
-
 [node name="LuzSol" type="DirectionalLight3D" parent="." unique_id=2028286990]
 transform = Transform3D(0.8660254, 0.43301272, -0.24999999, 0, 0.49999997, 0.86602545, 0.5, -0.75, 0.43301266, 0, 0, 0)
 
-[node name="BoteJogador" type="CharacterBody3D" parent="." unique_id=1173311076]
+[node name="BoteJogador" parent="." unique_id=641004950 instance=ExtResource("1_e0u37")]
 
-[node name="BoteDentada" parent="BoteJogador" unique_id=113745794 instance=ExtResource("1_e0u37")]
+[node name="IlhaDestino" type="Node3D" parent="." unique_id=1183184581]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1417265, 9.382856)
 
-[node name="Colisao" type="CollisionShape3D" parent="BoteJogador" unique_id=1705923442]
-shape = SubResource("BoxShape3D_x5pgy")
+[node name="palm-bend2" parent="IlhaDestino" unique_id=300878337 instance=ExtResource("2_j7631")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9611363, 1.0988426, 0)
+
+[node name="patch-grass-foliage2" parent="IlhaDestino" unique_id=16863154 instance=ExtResource("3_uvodn")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -1.7052207, 1.3952289, 11.883608)
+
+[node name="patch-sand2" parent="IlhaDestino" unique_id=1865247934 instance=ExtResource("4_3ephv")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.8963723, 0.81483555, 4.9936934)
+
+[node name="palm-detailed-straight2" parent="IlhaDestino" unique_id=648049748 instance=ExtResource("5_oxkd4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5791664, 1.1617534, 1.7668352)
+
+[node name="hole2" parent="IlhaDestino" unique_id=329791082 instance=ExtResource("6_7ejg5")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 4.1392636, 1.7218094, 4.6897984)
+
+[node name="grass-plant2" parent="IlhaDestino" unique_id=482896366 instance=ExtResource("7_rinqg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.560083, 2.2700162, 10.716629)
+
+[node name="grass-patch2" parent="IlhaDestino" unique_id=879729988 instance=ExtResource("8_357qt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.771021, 2.3941493, 8.804487)
+
+[node name="grass-patch3" parent="IlhaDestino" unique_id=1140324726 instance=ExtResource("8_357qt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.382129, 2.4211335, 7.819269)
+
+[node name="flag-high-pennant2" parent="IlhaDestino" unique_id=320046159 instance=ExtResource("9_lwasc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.489981, 12.351494)
+
+[node name="rocks-a2" parent="IlhaDestino" unique_id=1948771815 instance=ExtResource("10_4gr3m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.2597303, 0.6622548, 15.269823)
+
+[node name="rocks-sand-c2" parent="IlhaDestino" unique_id=205561791 instance=ExtResource("11_cv3ii")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.159277, 0, 6.5216103)
+
+[node name="rocks-c2" parent="IlhaDestino" unique_id=452048003 instance=ExtResource("12_phd5b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0955086, 16.657394)
+
+[editable path="BoteJogador"]
+[editable path="BoteJogador/BoteDentada"]
