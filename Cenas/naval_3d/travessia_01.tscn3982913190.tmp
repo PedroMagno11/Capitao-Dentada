@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://c7mgblruqajmt"]
+
+[ext_resource type="PackedScene" uid="uid://dbsncivmtwqdi" path="res://Assets/naval_3d/models_glb/boat-row-large.glb" id="1_e0u37"]
+[ext_resource type="Script" uid="uid://bu2bsd08stoby" path="res://Cenas/naval_3d/bote_jogador.gd" id="1_sb1gb"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_e0u37"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_sb1gb"]
+sky_material = SubResource("ProceduralSkyMaterial_e0u37")
+
+[sub_resource type="Environment" id="Environment_blkgo"]
+background_mode = 2
+sky = SubResource("Sky_sb1gb")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_blkgo"]
+albedo_color = Color(6.016344e-09, 6.016344e-09, 0.17847463, 1)
+metallic = 0.5
+roughness = 0.25
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_sb1gb"]
+size = Vector2(100, 100)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_x5pgy"]
+size = Vector3(1.5, 0.8408203, 2.8398438)
+
+[node name="Travessia01" type="Node3D" unique_id=102362562]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1104447254]
+environment = SubResource("Environment_blkgo")
+
+[node name="Oceano" type="MeshInstance3D" parent="." unique_id=1354484614]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+material_override = SubResource("StandardMaterial3D_blkgo")
+mesh = SubResource("PlaneMesh_sb1gb")
+
+[node name="LuzSol" type="DirectionalLight3D" parent="." unique_id=2028286990]
+transform = Transform3D(0.8660254, 0.43301272, -0.24999999, 0, 0.49999997, 0.86602545, 0.5, -0.75, 0.43301266, 0, 0, 0)
+
+[node name="BoteJogador" type="CharacterBody3D" parent="." unique_id=1173311076]
+motion_mode = 1
+script = ExtResource("1_sb1gb")
+
+[node name="CameraPrincipal" type="Camera3D" parent="BoteJogador" unique_id=1292041068]
+transform = Transform3D(-1, 6.181724e-08, -6.181724e-08, 0, 0.70710677, 0.70710677, 8.742278e-08, 0.70710677, -0.70710677, 0, 8, -6)
+current = true
+
+[node name="BoteDentada" parent="BoteJogador" unique_id=113745794 instance=ExtResource("1_e0u37")]
+
+[node name="Colisao" type="CollisionShape3D" parent="BoteJogador" unique_id=1705923442]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4428711, 0.0053710938)
+shape = SubResource("BoxShape3D_x5pgy")
+
+[editable path="BoteJogador/BoteDentada"]
