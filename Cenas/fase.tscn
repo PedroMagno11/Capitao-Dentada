@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://r8562mpsvor5" path="res://Cenas/Decoracao/palmeida_diretira.tscn" id="4_mij0q"]
 [ext_resource type="PackedScene" uid="uid://bn37jegrhmwmi" path="res://Cenas/Decoracao/palmeira.tscn" id="5_48g7u"]
 [ext_resource type="PackedScene" uid="uid://bunaohpm5v8uc" path="res://Cenas/Decoracao/background.tscn" id="6_efelf"]
+[ext_resource type="PackedScene" uid="uid://ceiuax8438w2q" path="res://Cenas/inimigos/sharkao.tscn" id="7_u30cq"]
+[ext_resource type="PackedScene" uid="uid://dsgr0ajegljfn" path="res://Cenas/inimigos/pinkoso.tscn" id="8_htw5y"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_51e0a"]
 texture = ExtResource("2_mij0q")
@@ -398,7 +400,7 @@ sources/0 = SubResource("TileSetAtlasSource_51e0a")
 [node name="Fase" type="Node2D" unique_id=1067228587]
 
 [node name="Player" parent="." unique_id=1437462318 instance=ExtResource("1_ywmpn")]
-position = Vector2(45, -162)
+position = Vector2(954, 118)
 jump_velocity = 400.0
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=645865814]
@@ -441,3 +443,9 @@ position = Vector2(3705, 545)
 position = Vector2(3867, 545)
 
 [node name="ParallaxBackground" parent="." unique_id=91857606 instance=ExtResource("6_efelf")]
+
+[node name="sharkao_inimigo" parent="." unique_id=2023919781 instance=ExtResource("7_u30cq")]
+position = Vector2(1251, 648)
+
+[node name="pinkoso_inimigo" parent="." unique_id=1393985990 instance=ExtResource("8_htw5y")]
+position = Vector2(1140, 643)
