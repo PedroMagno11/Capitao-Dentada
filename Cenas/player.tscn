@@ -184,17 +184,17 @@ script = ExtResource("1_pmvhq")
 jump_velocity = 300.0
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=543023698]
-position = Vector2(91.199936, 587.49994)
+position = Vector2(92.199936, 508.49997)
 scale = Vector2(0.7249981, 0.7249981)
 texture = ExtResource("2_iersn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1411184284]
-position = Vector2(91.250015, 586.99994)
+position = Vector2(92.250015, 507.99997)
 shape = SubResource("RectangleShape2D_58g0o")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1783138518]
 libraries/ = SubResource("AnimationLibrary_wh05g")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1781073661]
-position = Vector2(193, 537)
-zoom = Vector2(3, 3)
+position = Vector2(385, 433)
+zoom = Vector2(1.5, 1.5)
