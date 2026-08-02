@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bunaohpm5v8uc"]
+
+[ext_resource type="Texture2D" uid="uid://c8mdgd0i0l1k4" path="res://Assets/Background/back.png" id="1_bmwb3"]
+[ext_resource type="Texture2D" uid="uid://mbslps6t87pc" path="res://Assets/Palm Tree Island/Sprites/Background/Additional Water.png" id="2_wtber"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" unique_id=91857606]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="." unique_id=2004587776]
+position = Vector2(0, 57)
+motion_scale = Vector2(0.3, 0.3)
+motion_mirroring = Vector2(1350, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer" unique_id=138336656]
+position = Vector2(565, 304)
+scale = Vector2(3.5286458, 3.075)
+texture = ExtResource("1_bmwb3")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="." unique_id=287626139]
+visible = false
+motion_mirroring = Vector2(1024, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer2" unique_id=474279460]
+position = Vector2(563.5, 609)
+scale = Vector2(42.34375, 4.6875)
+texture = ExtResource("2_wtber")
