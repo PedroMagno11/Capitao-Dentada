@@ -81,7 +81,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_eyog6"]
 resource_name = "attack"
-length = 0.39999999999999997
+length = 0.4
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -97,7 +97,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_g1lmp"]
 resource_name = "attack_effect"
-length = 0.39999999999999997
+length = 0.4
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -256,7 +256,12 @@ _data = {
 &"run": SubResource("Animation_dhqep")
 }
 
-[node name="pinkoso_inimigo" type="CharacterBody2D" unique_id=2023919781]
+[sub_resource type="CircleShape2D" id="CircleShape2D_fl0mm"]
+radius = 13.0
+
+[node name="pinkoso_inimigo" type="CharacterBody2D" unique_id=2023919781 groups=["inimigo"]]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("1_fl0mm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1171988229]
@@ -274,3 +279,14 @@ autoplay = &"run"
 [node name="Ray" type="RayCast2D" parent="." unique_id=1165143704]
 position = Vector2(40, 9)
 target_position = Vector2(-15, 0)
+collision_mask = 13
+
+[node name="AttackArea" type="Area2D" parent="." unique_id=748130488]
+
+[node name="Collision" type="CollisionShape2D" parent="AttackArea" unique_id=1769657195]
+position = Vector2(39, 11)
+shape = SubResource("CircleShape2D_fl0mm")
+
+[connection signal="animation_finished" from="Animation" to="." method="_on_animation_finished"]
+[connection signal="body_entered" from="AttackArea" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="AttackArea" to="." method="_on_area_2d_body_exited"]

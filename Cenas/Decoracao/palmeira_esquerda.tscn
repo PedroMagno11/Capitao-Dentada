@@ -26,7 +26,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_58g0o"]
-size = Vector2(24, 2)
+size = Vector2(37, 2)
 
 [node name="Palmeira Esquerda" type="AnimatedSprite2D" unique_id=1450839777]
 sprite_frames = SubResource("SpriteFrames_58g0o")
@@ -34,8 +34,10 @@ autoplay = "default"
 frame_progress = 0.5951113
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1839239707]
+collision_layer = 8
+collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=202097604]
-position = Vector2(6, -25)
+position = Vector2(6.5, -25)
 shape = SubResource("RectangleShape2D_58g0o")
 one_way_collision = true

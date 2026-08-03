@@ -26,7 +26,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_58g0o"]
-size = Vector2(23, 1)
+size = Vector2(35.5, 1)
 
 [node name="Palmeida Diretira" type="AnimatedSprite2D" unique_id=1347416795]
 sprite_frames = SubResource("SpriteFrames_ityo2")
@@ -34,8 +34,10 @@ autoplay = "default"
 frame_progress = 0.884569
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=542176768]
+collision_layer = 8
+collision_mask = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1742669788]
-position = Vector2(-7, -26)
+position = Vector2(-6.75, -26)
 shape = SubResource("RectangleShape2D_58g0o")
 one_way_collision = true

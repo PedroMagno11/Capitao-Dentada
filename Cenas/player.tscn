@@ -2,14 +2,18 @@
 
 [ext_resource type="Script" uid="uid://uixqhr60ida5" path="res://Scripts/player.gd" id="1_pmvhq"]
 [ext_resource type="Texture2D" uid="uid://bsmvsikfgxueu" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 01.png" id="2_iersn"]
+[ext_resource type="Texture2D" uid="uid://cr1jt35v1k6dm" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/08-Dead Ground/Dead Ground 01.png" id="3_5sl0s"]
 [ext_resource type="Texture2D" uid="uid://cbmdlokeoo2ku" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/07-Dead Hit/Dead Hit 01.png" id="3_8v2xp"]
 [ext_resource type="Texture2D" uid="uid://b13kdrp0um6l8" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 02.png" id="3_ruciq"]
+[ext_resource type="Texture2D" uid="uid://dalxsy7lngb2s" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/08-Dead Ground/Dead Ground 02.png" id="4_6bkmt"]
 [ext_resource type="Texture2D" uid="uid://d0rpi6u7i3w60" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/07-Dead Hit/Dead Hit 02.png" id="4_t7cd8"]
 [ext_resource type="Texture2D" uid="uid://dho2lpdu3dnbf" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 03.png" id="4_yk6xx"]
+[ext_resource type="Texture2D" uid="uid://1pfskglf1h36" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/08-Dead Ground/Dead Ground 03.png" id="5_2ex7r"]
 [ext_resource type="Texture2D" uid="uid://dktu38mlgau8o" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 04.png" id="5_bb2x8"]
 [ext_resource type="Texture2D" uid="uid://tyea0nmsijvd" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/07-Dead Hit/Dead Hit 03.png" id="5_sjhg2"]
 [ext_resource type="Texture2D" uid="uid://c7e0yx4fj1pbj" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/01-Idle/Idle 05.png" id="6_60xba"]
 [ext_resource type="Texture2D" uid="uid://bakx4djii0lvn" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/07-Dead Hit/Dead Hit 04.png" id="6_jnm6q"]
+[ext_resource type="Texture2D" uid="uid://dllp5sp1u57dk" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/08-Dead Ground/Dead Ground 04.png" id="6_ylkck"]
 [ext_resource type="Texture2D" uid="uid://ccua2ypym6a7t" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/02-Run/Run 01.png" id="7_2c22q"]
 [ext_resource type="Texture2D" uid="uid://t04j64oif3r6" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/04-Fall/Fall 01.png" id="7_ka0he"]
 [ext_resource type="Texture2D" uid="uid://baoq7qiv230d2" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/05-Ground/Ground 01.png" id="8_rxqvy"]
@@ -26,12 +30,40 @@
 [ext_resource type="Texture2D" uid="uid://6tddiv8x7kbv" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/03-Jump/Jump 01.png" id="18_phtmq"]
 [ext_resource type="Texture2D" uid="uid://di6o45a3k6lnu" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/03-Jump/Jump 02.png" id="19_8vy8t"]
 [ext_resource type="Texture2D" uid="uid://brmrxj2rfhjpb" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose without Sword/03-Jump/Jump 03.png" id="20_gdv6k"]
+[ext_resource type="Texture2D" uid="uid://c3wsm70qr6byi" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose with Sword/15-Attack 1/Attack 1 01.png" id="27_jnm6q"]
+[ext_resource type="Texture2D" uid="uid://ktv1mkpxw34b" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose with Sword/15-Attack 1/Attack 1 02.png" id="28_ka0he"]
+[ext_resource type="Texture2D" uid="uid://bo8f6fu5nummi" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose with Sword/15-Attack 1/Attack 1 03.png" id="29_rxqvy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_58g0o"]
-size = Vector2(10.5, 18)
+size = Vector2(10, 18)
 
 [sub_resource type="Animation" id="Animation_0jd21"]
 resource_name = "Dead Ground"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("3_5sl0s"), ExtResource("4_6bkmt"), ExtResource("5_2ex7r"), ExtResource("6_ylkck")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CollisionShape2D:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, true]
+}
 
 [sub_resource type="Animation" id="Animation_pxip4"]
 resource_name = "Dead Hit"
@@ -85,7 +117,6 @@ tracks/0/keys = {
 [sub_resource type="Animation" id="Animation_72r0d"]
 resource_name = "Hit"
 length = 0.4
-loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -165,6 +196,34 @@ tracks/0/keys = {
 "values": [ExtResource("7_2c22q"), ExtResource("8_vlk8b"), ExtResource("9_had87"), ExtResource("10_axwfv"), ExtResource("11_8tubf"), ExtResource("12_a4yfx")]
 }
 
+[sub_resource type="Animation" id="Animation_2umio"]
+resource_name = "ataque"
+length = 0.23333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [ExtResource("27_jnm6q"), ExtResource("28_ka0he"), ExtResource("29_rxqvy")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AttackArea/Collision:disabled")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0965533, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [true, false, false, true]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_wh05g"]
 _data = {
 &"Dead Ground": SubResource("Animation_0jd21"),
@@ -175,22 +234,26 @@ _data = {
 &"Idle": SubResource("Animation_alogn"),
 &"Jump": SubResource("Animation_u2l5q"),
 &"RESET": SubResource("Animation_4j5ex"),
-&"Run": SubResource("Animation_dj8y3")
+&"Run": SubResource("Animation_dj8y3"),
+&"ataque": SubResource("Animation_2umio")
 }
 
-[node name="Player" type="CharacterBody2D" unique_id=1437462318]
-position = Vector2(-1, 1)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ww4y6"]
+size = Vector2(12, 3.5)
+
+[node name="Player" type="CharacterBody2D" unique_id=1437462318 groups=["player"]]
+collision_mask = 14
 script = ExtResource("1_pmvhq")
 jump_velocity = 300.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1411184284]
+position = Vector2(92, 508)
+shape = SubResource("RectangleShape2D_58g0o")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=543023698]
 position = Vector2(92.199936, 508.49997)
 scale = Vector2(0.7249981, 0.7249981)
 texture = ExtResource("2_iersn")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1411184284]
-position = Vector2(92.250015, 507.99997)
-shape = SubResource("RectangleShape2D_58g0o")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1783138518]
 libraries/ = SubResource("AnimationLibrary_wh05g")
@@ -198,3 +261,21 @@ libraries/ = SubResource("AnimationLibrary_wh05g")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1781073661]
 position = Vector2(385, 433)
 zoom = Vector2(1.5, 1.5)
+
+[node name="AttackArea" type="Area2D" parent="." unique_id=1456644662]
+collision_layer = 8
+collision_mask = 2
+
+[node name="Collision" type="CollisionShape2D" parent="AttackArea" unique_id=1647619962]
+position = Vector2(109, 511)
+shape = SubResource("RectangleShape2D_ww4y6")
+disabled = true
+debug_color = Color(0.95243424, 2.5990605e-06, 0.56112087, 0.41960785)
+
+[node name="Timer" type="Timer" parent="." unique_id=1786279132]
+wait_time = 3.0
+one_shot = true
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_finished"]
+[connection signal="body_entered" from="AttackArea" to="." method="_on_attack_area_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
