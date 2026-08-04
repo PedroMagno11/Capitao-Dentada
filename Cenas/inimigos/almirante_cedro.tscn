@@ -171,6 +171,7 @@ shape = SubResource("RectangleShape2D_i6ulc")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1625570399]
 libraries/ = SubResource("AnimationLibrary_hxr8i")
+autoplay = &"idle"
 
 [node name="Timer" type="Timer" parent="." unique_id=1934539963]
 

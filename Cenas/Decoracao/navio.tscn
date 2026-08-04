@@ -1,0 +1,93 @@
+[gd_scene format=3 uid="uid://d08kv0oo4oiws"]
+
+[ext_resource type="Script" uid="uid://v26jvyu21154" path="res://Scripts/navio.gd" id="1_broec"]
+[ext_resource type="Texture2D" uid="uid://cr4pb7wlf3ovc" path="res://Assets/Merchant Ship/Sprites/Ship/Ship/Idle/1.png" id="1_x54en"]
+[ext_resource type="Texture2D" uid="uid://c0tpq11jqjjxy" path="res://Assets/Merchant Ship/Sprites/Ship/Ship/Idle/2.png" id="2_broec"]
+[ext_resource type="Texture2D" uid="uid://3q2140x30p30" path="res://Assets/Merchant Ship/Sprites/Ship/Ship/Idle/3.png" id="3_nemq4"]
+[ext_resource type="Texture2D" uid="uid://bro57buqrmv3o" path="res://Assets/Merchant Ship/Sprites/Ship/Ship/Idle/4.png" id="4_4fym0"]
+[ext_resource type="Texture2D" uid="uid://bs5p07u7vn2uk" path="res://Assets/Merchant Ship/Sprites/Ship/Ship/Idle/5.png" id="5_bibct"]
+[ext_resource type="Texture2D" uid="uid://dj1vpt3le6iym" path="res://Assets/Merchant Ship/Sprites/Ship/Ship/Idle/6.png" id="6_vavv1"]
+[ext_resource type="Texture2D" uid="uid://b71vmlstjw1v2" path="res://Assets/Merchant Ship/Sprites/Ship/Sail/Transition to No Wind/1.png" id="7_6s6xx"]
+[ext_resource type="Texture2D" uid="uid://chswh2yae02vm" path="res://Assets/Merchant Ship/Sprites/Ship/Sail/Transition to No Wind/2.png" id="8_5cnd6"]
+[ext_resource type="Texture2D" uid="uid://b6v0mm47rbfgy" path="res://Assets/Merchant Ship/Sprites/Ship/Sail/Transition to No Wind/3.png" id="9_vwyn4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_clmwn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_x54en")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_broec")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_nemq4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_4fym0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_bibct")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_vavv1")
+}],
+"loop": 1,
+"name": &"barco",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_0th2s"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_6s6xx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5cnd6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_vwyn4")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_58g0o"]
+size = Vector2(365, 136)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ityo2"]
+size = Vector2(344, 89)
+
+[node name="navio" type="StaticBody2D" unique_id=403112962]
+collision_layer = 4
+script = ExtResource("1_broec")
+
+[node name="barco" type="AnimatedSprite2D" parent="." unique_id=414717722]
+position = Vector2(313.38464, 338.5714)
+scale = Vector2(4.3846145, 4.384614)
+sprite_frames = SubResource("SpriteFrames_clmwn")
+animation = &"barco"
+autoplay = "barco"
+
+[node name="vela" type="AnimatedSprite2D" parent="." unique_id=1198606948]
+position = Vector2(331.38464, 191.57144)
+scale = Vector2(4.142857, 4.142857)
+sprite_frames = SubResource("SpriteFrames_0th2s")
+autoplay = "default"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=370325200]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1687608378]
+position = Vector2(310.5, 317)
+shape = SubResource("RectangleShape2D_58g0o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=937300916]
+position = Vector2(315, 336.5)
+shape = SubResource("RectangleShape2D_ityo2")
+
+[node name="Timer" type="Timer" parent="." unique_id=1402933155]
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

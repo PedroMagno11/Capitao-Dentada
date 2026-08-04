@@ -82,6 +82,7 @@ atacar={
 2d_physics/layer_3="Chao"
 2d_physics/layer_4="Palmeiras"
 2d_physics/layer_5="moedas"
+2d_physics/layer_6="limitador"
 
 [physics]
 
