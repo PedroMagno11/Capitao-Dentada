@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dchn33rwnrssk"]
+
+[node name="Almirante_Cedro" type="CharacterBody2D" unique_id=760743377 groups=["inimigo"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1170293683]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1633463121]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1625570399]
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1262551915]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2009257073]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1220053957]
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=982528366]
+offset_right = 4.0
+offset_bottom = 27.0

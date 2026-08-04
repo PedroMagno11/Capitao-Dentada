@@ -10,6 +10,8 @@ extends CharacterBody2D
 @onready var sprite = $Sprite2D
 @onready var attack_area: Area2D = $AttackArea
 @onready var timer: Timer = $Timer
+@onready var barra_de_vida: ProgressBar = $ProgressBar
+@onready var hud: Label = $"../Hud/Moeda"
 
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -18,9 +20,15 @@ var atacando: bool
 var vida: int = vida_max
 var is_dead: bool = false
 var levando_hit: bool = false
+var contador_de_moeda: int = 0
 
 const ATTACK_POSITION_COLLISION_RIGHT = 109
 const ATTACK_POSITION_COLLISION_LEFT = 74
+
+
+func _ready() -> void:
+	barra_de_vida.max_value = vida_max
+	barra_de_vida.value = vida
 
 func _process(delta):
 	if is_dead:
@@ -103,6 +111,8 @@ func take_damage(amout: int):
 		return
 	
 	vida -= amout
+	barra_de_vida.value = vida
+
 	if vida <= 0:
 		die()
 	else:
@@ -121,3 +131,7 @@ func _on_timer_timeout() -> void:
 func _on_attack_area_body_entered(body: Node2D) -> void:
 	if body.is_in_group("inimigo") and atacando:
 		body.take_damage(dano)
+
+func coletar_moeda():
+	contador_de_moeda += 1
+	hud.text = "Moedas: %d" %contador_de_moeda

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dsgr0ajegljfn"]
 
-[ext_resource type="Script" uid="uid://uvlkmqsjs4jg" path="res://Scripts/Inimigos/pinkoso.gd" id="1_fl0mm"]
+[ext_resource type="Script" uid="uid://uvlkmqsjs4jg" path="res://Scripts/Inimigos/estrelado.gd" id="1_fl0mm"]
 [ext_resource type="Texture2D" uid="uid://bxsaqqknqiclw" path="res://Assets/The Crusty Crew/Sprites/Pink Star/01-Idle/Idle 01.png" id="2_fl0mm"]
 [ext_resource type="Texture2D" uid="uid://c7lf1jodudj0b" path="res://Assets/The Crusty Crew/Sprites/Pink Star/06-Anticipation/Anticipation 01.png" id="3_god2m"]
 [ext_resource type="Texture2D" uid="uid://b32fpfql7kvkb" path="res://Assets/The Crusty Crew/Sprites/Pink Star/06-Anticipation/Anticipation 02.png" id="4_cbii6"]
@@ -259,7 +259,13 @@ _data = {
 [sub_resource type="CircleShape2D" id="CircleShape2D_fl0mm"]
 radius = 13.0
 
-[node name="pinkoso_inimigo" type="CharacterBody2D" unique_id=2023919781 groups=["inimigo"]]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_58g0o"]
+bg_color = Color(0.7267702, 0, 0.16807124, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ityo2"]
+bg_color = Color(0, 0.57920814, 0.23467582, 1)
+
+[node name="estrelado" type="CharacterBody2D" unique_id=2023919781 groups=["inimigo"]]
 collision_layer = 2
 collision_mask = 5
 script = ExtResource("1_fl0mm")
@@ -286,6 +292,17 @@ collision_mask = 13
 [node name="Collision" type="CollisionShape2D" parent="AttackArea" unique_id=1769657195]
 position = Vector2(39, 11)
 shape = SubResource("CircleShape2D_fl0mm")
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=227866789]
+offset_left = 25.0
+offset_top = -8.0
+offset_right = 50.0
+offset_bottom = -4.0
+theme_override_styles/background = SubResource("StyleBoxFlat_58g0o")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ityo2")
+max_value = 10.0
+value = 10.0
+show_percentage = false
 
 [connection signal="animation_finished" from="Animation" to="." method="_on_animation_finished"]
 [connection signal="body_entered" from="AttackArea" to="." method="_on_area_2d_body_entered"]

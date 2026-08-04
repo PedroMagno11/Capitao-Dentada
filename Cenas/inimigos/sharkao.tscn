@@ -260,6 +260,12 @@ _data = {
 [sub_resource type="CircleShape2D" id="CircleShape2D_58g0o"]
 radius = 13.0
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_40y54"]
+bg_color = Color(0.68082863, 0, 0.18682924, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j5hi4"]
+bg_color = Color(1.4439226e-07, 0.54680717, 0.16403171, 1)
+
 [node name="sharkao_inimigo" type="CharacterBody2D" unique_id=2023919781 groups=["inimigo"]]
 collision_layer = 2
 collision_mask = 5
@@ -287,6 +293,17 @@ collision_mask = 13
 [node name="Collision" type="CollisionShape2D" parent="AttackArea" unique_id=95118893]
 position = Vector2(41, 10)
 shape = SubResource("CircleShape2D_58g0o")
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=500987036]
+offset_left = 28.0
+offset_top = -6.0
+offset_right = 52.0
+offset_bottom = -2.0
+theme_override_styles/background = SubResource("StyleBoxFlat_40y54")
+theme_override_styles/fill = SubResource("StyleBoxFlat_j5hi4")
+max_value = 10.0
+value = 10.0
+show_percentage = false
 
 [connection signal="animation_finished" from="Animation" to="." method="_on_animation_finished"]
 [connection signal="body_entered" from="AttackArea" to="." method="_on_area_2d_body_entered"]

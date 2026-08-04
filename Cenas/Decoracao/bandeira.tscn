@@ -47,4 +47,5 @@ animations = [{
 
 [node name="Bandeira" type="AnimatedSprite2D" unique_id=1484218170]
 sprite_frames = SubResource("SpriteFrames_58g0o")
+autoplay = "default"
 frame_progress = 0.93522775

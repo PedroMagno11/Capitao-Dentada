@@ -7,6 +7,7 @@ const DANO = 1
 @onready var animation: AnimationPlayer = $Animation
 @onready var ray: RayCast2D = $Ray
 @onready var collision: CollisionShape2D = $AttackArea/Collision
+@onready var barra_de_vida: ProgressBar = $ProgressBar
 
 
 var atacando: bool
@@ -15,6 +16,10 @@ var is_dead: bool = false
 var levando_hit: bool = false
 
 @export var direction := -10
+
+func _ready() -> void:
+	barra_de_vida.max_value = VIDA_MAX
+	barra_de_vida.value = vida
 
 func _physics_process(delta: float) -> void:
 	if is_dead or levando_hit:
@@ -78,6 +83,7 @@ func take_damage(amout: int):
 		return
 	
 	vida -= amout
+	barra_de_vida.value = vida
 	if vida <= 0:
 		die()
 	else:
