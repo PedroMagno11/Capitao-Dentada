@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dchn33rwnrssk"]
 
 [ext_resource type="Texture2D" uid="uid://dd5x8dbv8yquv" path="res://Assets/Amirante_Cedro/1-Idle/1.png" id="1_8m3h4"]
+[ext_resource type="Script" uid="uid://3wf8wjx0ykdd" path="res://Cenas/inimigos/almirante_cedro.gd" id="1_kjmcb"]
 [ext_resource type="Texture2D" uid="uid://diiq0odda833j" path="res://Assets/Amirante_Cedro/7-Attack/1.png" id="2_kxmoj"]
 [ext_resource type="Texture2D" uid="uid://bs0j7et3a8roq" path="res://Assets/Amirante_Cedro/1-Idle/2.png" id="2_n1cpv"]
 [ext_resource type="Texture2D" uid="uid://cjft6c56prh6g" path="res://Assets/Amirante_Cedro/1-Idle/3.png" id="3_5iu2c"]
@@ -58,6 +59,20 @@
 [ext_resource type="Texture2D" uid="uid://br2y3j82w3386" path="res://Assets/Amirante_Cedro/1-Idle/32.png" id="32_4p6ne"]
 [ext_resource type="Texture2D" uid="uid://c4g4dsd7mkp86" path="res://Assets/Amirante_Cedro/1-Idle/33.png" id="33_qx3ud"]
 [ext_resource type="Texture2D" uid="uid://8durkc2pvcle" path="res://Assets/Amirante_Cedro/1-Idle/34.png" id="34_clh3i"]
+[ext_resource type="Texture2D" uid="uid://cqrlt32f5fp0d" path="res://Assets/Amirante_Cedro/2-Run/1.png" id="59_ql1ol"]
+[ext_resource type="Texture2D" uid="uid://clneu0pgmmyea" path="res://Assets/Amirante_Cedro/2-Run/2.png" id="60_kjmcb"]
+[ext_resource type="Texture2D" uid="uid://1hl3gqslwpwr" path="res://Assets/Amirante_Cedro/2-Run/3.png" id="61_76jjy"]
+[ext_resource type="Texture2D" uid="uid://bt8j8hggn32eb" path="res://Assets/Amirante_Cedro/2-Run/4.png" id="62_nq3o1"]
+[ext_resource type="Texture2D" uid="uid://b5l4vuu76tega" path="res://Assets/Amirante_Cedro/2-Run/5.png" id="63_js1pb"]
+[ext_resource type="Texture2D" uid="uid://cwqye2if6p77i" path="res://Assets/Amirante_Cedro/2-Run/6.png" id="64_pqprt"]
+[ext_resource type="Texture2D" uid="uid://bfa32idwwyj8m" path="res://Assets/Amirante_Cedro/2-Run/7.png" id="65_gfffw"]
+[ext_resource type="Texture2D" uid="uid://ddknuywnidccq" path="res://Assets/Amirante_Cedro/2-Run/8.png" id="66_0ed2v"]
+[ext_resource type="Texture2D" uid="uid://dnjmim6igey6h" path="res://Assets/Amirante_Cedro/2-Run/9.png" id="67_oj81n"]
+[ext_resource type="Texture2D" uid="uid://c8yh8p8atgani" path="res://Assets/Amirante_Cedro/2-Run/10.png" id="68_kdqrj"]
+[ext_resource type="Texture2D" uid="uid://lyhq3g73hxof" path="res://Assets/Amirante_Cedro/2-Run/11.png" id="69_7ykwc"]
+[ext_resource type="Texture2D" uid="uid://dtyjxnxg7d5ei" path="res://Assets/Amirante_Cedro/2-Run/12.png" id="70_8ecgw"]
+[ext_resource type="Texture2D" uid="uid://cfb7jbu5f02go" path="res://Assets/Amirante_Cedro/2-Run/13.png" id="71_yqi1f"]
+[ext_resource type="Texture2D" uid="uid://ba7cccb8xwa17" path="res://Assets/Amirante_Cedro/2-Run/14.png" id="72_1y80a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i6ulc"]
 size = Vector2(37, 58)
@@ -95,7 +110,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_8ecgw"]
 resource_name = "dead"
-length = 0.39999999999999997
+length = 0.4
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -142,13 +157,31 @@ tracks/0/keys = {
 "values": [ExtResource("1_8m3h4"), ExtResource("2_n1cpv"), ExtResource("3_5iu2c"), ExtResource("4_bwfmr"), ExtResource("5_2mnwi"), ExtResource("6_pk8bs"), ExtResource("7_m5jpp"), ExtResource("8_5oor6"), ExtResource("9_h1m0q"), ExtResource("10_ms01k"), ExtResource("11_hwxi6"), ExtResource("12_ii6gw"), ExtResource("13_utspf"), ExtResource("14_h6nem"), ExtResource("15_adkrm"), ExtResource("16_smuhm"), ExtResource("17_x1py2"), ExtResource("18_aod07"), ExtResource("19_s253f"), ExtResource("20_il2gm"), ExtResource("21_3q2wo"), ExtResource("22_0dv2o"), ExtResource("23_f830w"), ExtResource("24_ntc4j"), ExtResource("25_wwqtk"), ExtResource("26_kxmoj"), ExtResource("27_knqk7"), ExtResource("28_1467l"), ExtResource("29_7yuu6"), ExtResource("30_v6o78"), ExtResource("31_ejdmg"), ExtResource("32_4p6ne"), ExtResource("33_qx3ud"), ExtResource("34_clh3i")]
 }
 
+[sub_resource type="Animation" id="Animation_rumqt"]
+resource_name = "run"
+length = 1.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1, 1.1, 1.2, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("59_ql1ol"), ExtResource("60_kjmcb"), ExtResource("61_76jjy"), ExtResource("62_nq3o1"), ExtResource("63_js1pb"), ExtResource("64_pqprt"), ExtResource("65_gfffw"), ExtResource("66_0ed2v"), ExtResource("67_oj81n"), ExtResource("68_kdqrj"), ExtResource("69_7ykwc"), ExtResource("70_8ecgw"), ExtResource("71_yqi1f"), ExtResource("72_1y80a")]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_hxr8i"]
 _data = {
 &"RESET": SubResource("Animation_0njwr"),
 &"attack": SubResource("Animation_7ykwc"),
 &"dead": SubResource("Animation_8ecgw"),
 &"hit": SubResource("Animation_yqi1f"),
-&"idle": SubResource("Animation_4ohvf")
+&"idle": SubResource("Animation_4ohvf"),
+&"run": SubResource("Animation_rumqt")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1y80a"]
@@ -160,10 +193,14 @@ bg_color = Color(0.89080113, 0, 0.29839876, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jukd1"]
 bg_color = Color(1.2513996e-06, 0.6371731, 0.31508043, 1)
 
-[node name="Almirante_Cedro" type="CharacterBody2D" unique_id=760743377 groups=["inimigo"]]
+[node name="Almirante_Cedro" type="CharacterBody2D" unique_id=760743377 groups=["inimigo", "inimigos"]]
+collision_layer = 2
+collision_mask = 37
+script = ExtResource("1_kjmcb")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1633463121]
 texture = ExtResource("1_8m3h4")
+flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1170293683]
 position = Vector2(-3.5, 4)
@@ -171,7 +208,11 @@ shape = SubResource("RectangleShape2D_i6ulc")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1625570399]
 libraries/ = SubResource("AnimationLibrary_hxr8i")
-autoplay = &"idle"
+autoplay = &"run"
+
+[node name="Ray" type="RayCast2D" parent="." unique_id=350506037]
+target_position = Vector2(-25, 20)
+collision_mask = 36
 
 [node name="Timer" type="Timer" parent="." unique_id=1934539963]
 
@@ -195,3 +236,7 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_jukd1")
 max_value = 50.0
 value = 50.0
 show_percentage = false
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_finished"]
+[connection signal="body_entered" from="AttackArea" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="AttackArea" to="." method="_on_area_2d_body_exited"]

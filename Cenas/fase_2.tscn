@@ -17,6 +17,15 @@
 [ext_resource type="Texture2D" uid="uid://dbv5qivseah30" path="res://Assets/Merchant Ship/Sprites/Water/Water/Top/2.png" id="15_k7do7"]
 [ext_resource type="Texture2D" uid="uid://cjoflvnw4k1fg" path="res://Assets/Merchant Ship/Sprites/Water/Water/Top/3.png" id="16_qaxjd"]
 [ext_resource type="Texture2D" uid="uid://belym0f6oae2a" path="res://Assets/Merchant Ship/Sprites/Water/Water/Top/4.png" id="17_6dtsh"]
+[ext_resource type="Texture2D" uid="uid://cr4pb7wlf3ovc" path="res://Assets/Merchant Ship/Sprites/Ship/Ship/Idle/1.png" id="18_vafe4"]
+[ext_resource type="Texture2D" uid="uid://c0tpq11jqjjxy" path="res://Assets/Merchant Ship/Sprites/Ship/Ship/Idle/2.png" id="19_0jtjk"]
+[ext_resource type="Texture2D" uid="uid://3q2140x30p30" path="res://Assets/Merchant Ship/Sprites/Ship/Ship/Idle/3.png" id="20_ou7gt"]
+[ext_resource type="Texture2D" uid="uid://bro57buqrmv3o" path="res://Assets/Merchant Ship/Sprites/Ship/Ship/Idle/4.png" id="21_3eqj7"]
+[ext_resource type="Texture2D" uid="uid://bs5p07u7vn2uk" path="res://Assets/Merchant Ship/Sprites/Ship/Ship/Idle/5.png" id="22_6d73a"]
+[ext_resource type="Texture2D" uid="uid://dj1vpt3le6iym" path="res://Assets/Merchant Ship/Sprites/Ship/Ship/Idle/6.png" id="23_k7do7"]
+[ext_resource type="Texture2D" uid="uid://b71vmlstjw1v2" path="res://Assets/Merchant Ship/Sprites/Ship/Sail/Transition to No Wind/1.png" id="24_qaxjd"]
+[ext_resource type="Texture2D" uid="uid://chswh2yae02vm" path="res://Assets/Merchant Ship/Sprites/Ship/Sail/Transition to No Wind/2.png" id="25_6dtsh"]
+[ext_resource type="Texture2D" uid="uid://b6v0mm47rbfgy" path="res://Assets/Merchant Ship/Sprites/Ship/Sail/Transition to No Wind/3.png" id="26_0d74c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0d74c"]
 texture = ExtResource("2_wno4v")
@@ -408,13 +417,76 @@ terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
 sources/0 = SubResource("TileSetAtlasSource_0d74c")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_58g0o"]
-size = Vector2(35, 92)
+size = Vector2(395, 92)
 
 [sub_resource type="LabelSettings" id="LabelSettings_g1hf4"]
 shadow_size = 4
 shadow_color = Color(0, 0, 0, 0.6039216)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4vf1n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_6d73a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_k7do7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_qaxjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_6dtsh")
+}],
+"loop": 1,
+"name": &"mar",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x2lbx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_vafe4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_0jtjk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ou7gt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_3eqj7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_6d73a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_k7do7")
+}],
+"loop": 1,
+"name": &"barco",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_g1hf4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("24_qaxjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_6dtsh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_0d74c")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uwrtb"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -452,7 +524,7 @@ tile_set = SubResource("TileSet_x2lbx")
 position = Vector2(210, 480)
 
 [node name="Palmeira2" parent="Palmeiras" unique_id=969699846 instance=ExtResource("3_auht4")]
-position = Vector2(2025, 449)
+position = Vector2(2037, 449)
 
 [node name="ParallaxBackground" parent="." unique_id=91857606 instance=ExtResource("4_hfxx3")]
 
@@ -480,13 +552,13 @@ position = Vector2(1173, 594)
 position = Vector2(1844, 305)
 
 [node name="Bandeira4" parent="Bandeiras" unique_id=706871562 instance=ExtResource("7_yau6i")]
-position = Vector2(2708, 51)
+position = Vector2(2891, 104)
 script = ExtResource("8_imh4f")
 
 [node name="Area2D" type="Area2D" parent="Bandeiras/Bandeira4" unique_id=396889058]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bandeiras/Bandeira4/Area2D" unique_id=644378779]
-position = Vector2(0.5, 0)
+position = Vector2(122.5, 0)
 shape = SubResource("RectangleShape2D_58g0o")
 
 [node name="Moeda" parent="." unique_id=408293983 instance=ExtResource("8_esxpn")]
@@ -563,14 +635,8 @@ offset_bottom = 33.0
 text = "Moedas: 0"
 label_settings = SubResource("LabelSettings_g1hf4")
 
-[node name="Almirante_Cedro" parent="." unique_id=760743377 instance=ExtResource("11_0jtjk")]
-position = Vector2(2286, 446)
-
 [node name="limitador" parent="." unique_id=1083105232 instance=ExtResource("12_ou7gt")]
 position = Vector2(490, 501)
-
-[node name="limitador2" parent="." unique_id=1428459781 instance=ExtResource("12_ou7gt")]
-position = Vector2(583, 470)
 
 [node name="limitador3" parent="." unique_id=1148701989 instance=ExtResource("12_ou7gt")]
 position = Vector2(1529, 278)
@@ -584,5 +650,28 @@ scale = Vector2(29.619793, 9.59375)
 sprite_frames = SubResource("SpriteFrames_4vf1n")
 animation = &"mar"
 autoplay = "mar"
+
+[node name="barco" type="AnimatedSprite2D" parent="." unique_id=351811736]
+position = Vector2(2983.3845, 196.57137)
+scale = Vector2(4.3846145, 4.384614)
+sprite_frames = SubResource("SpriteFrames_x2lbx")
+animation = &"barco"
+autoplay = "barco"
+
+[node name="vela" type="AnimatedSprite2D" parent="." unique_id=453517188]
+position = Vector2(3001.3845, 49.571426)
+scale = Vector2(4.142857, 4.142857)
+sprite_frames = SubResource("SpriteFrames_g1hf4")
+autoplay = "default"
+
+[node name="mar2" type="AnimatedSprite2D" parent="." unique_id=1619025873]
+position = Vector2(3025, 521)
+scale = Vector2(7.977864, 22.171873)
+sprite_frames = SubResource("SpriteFrames_uwrtb")
+animation = &"mar"
+autoplay = "mar"
+
+[node name="Almirante_Cedro" parent="." unique_id=760743377 instance=ExtResource("11_0jtjk")]
+position = Vector2(2328, 446)
 
 [connection signal="body_entered" from="Bandeiras/Bandeira4/Area2D" to="Bandeiras/Bandeira4" method="_on_area_2d_body_entered"]
