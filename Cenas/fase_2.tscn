@@ -17,6 +17,8 @@
 [ext_resource type="Texture2D" uid="uid://dbv5qivseah30" path="res://Assets/Merchant Ship/Sprites/Water/Water/Top/2.png" id="15_k7do7"]
 [ext_resource type="Texture2D" uid="uid://cjoflvnw4k1fg" path="res://Assets/Merchant Ship/Sprites/Water/Water/Top/3.png" id="16_qaxjd"]
 [ext_resource type="Texture2D" uid="uid://belym0f6oae2a" path="res://Assets/Merchant Ship/Sprites/Water/Water/Top/4.png" id="17_6dtsh"]
+[ext_resource type="PackedScene" uid="uid://d08kv0oo4oiws" path="res://Cenas/Decoracao/navio.tscn" id="18_wno4v"]
+[ext_resource type="Script" uid="uid://ngk12muq5b2w" path="res://Scripts/navio2.gd" id="19_auht4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0d74c"]
 texture = ExtResource("2_wno4v")
@@ -434,6 +436,26 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_wno4v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_6d73a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_k7do7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_qaxjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_6dtsh")
+}],
+"loop": 1,
+"name": &"mar",
+"speed": 5.0
+}]
+
 [node name="Fase2" type="Node2D" unique_id=811191502]
 
 [node name="Spike" parent="." unique_id=1818618863 instance=ExtResource("1_imh4f")]
@@ -582,6 +604,17 @@ position = Vector2(1733, 278)
 position = Vector2(1248.75, 748.5)
 scale = Vector2(29.619793, 9.59375)
 sprite_frames = SubResource("SpriteFrames_4vf1n")
+animation = &"mar"
+autoplay = "mar"
+
+[node name="navio2" parent="." unique_id=403112962 instance=ExtResource("18_wno4v")]
+position = Vector2(2693, -197)
+script = ExtResource("19_auht4")
+
+[node name="mar2" type="AnimatedSprite2D" parent="." unique_id=551494989]
+position = Vector2(3411, 275.0001)
+scale = Vector2(12.5286455, 9.59375)
+sprite_frames = SubResource("SpriteFrames_wno4v")
 animation = &"mar"
 autoplay = "mar"
 
