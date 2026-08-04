@@ -136,7 +136,6 @@ func animar_remos(delta: float, giro: float) -> void:
 			suavizacao
 		)
 
-
 func animar_balanco_mar(delta: float) -> void:
 	tempo_balanco += delta * velocidade_balanco
 
@@ -175,7 +174,6 @@ func iniciar_intro_camera() -> void:
 	)
 
 	tween.tween_callback(finalizar_intro_camera)
-
 
 func finalizar_intro_camera() -> void:
 	introducao_ativa = false

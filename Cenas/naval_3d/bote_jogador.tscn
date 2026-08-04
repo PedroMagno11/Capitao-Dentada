@@ -11,7 +11,7 @@ motion_mode = 1
 script = ExtResource("1_eu312")
 
 [node name="CameraPrincipal" type="Camera3D" parent="." unique_id=1497612215]
-transform = Transform3D(-1, 6.181724e-08, -6.181724e-08, 0, 0.70710677, 0.70710677, 8.742278e-08, 0.70710677, -0.70710677, 0, 8, -6)
+transform = Transform3D(-1, 5.3649455e-08, -6.9025205e-08, 0, 0.78955626, 0.6136782, 8.742278e-08, 0.6136782, -0.78955626, 0, 8, -6)
 current = true
 
 [node name="BoteDentada" parent="." unique_id=113745794 instance=ExtResource("2_uyvvl")]

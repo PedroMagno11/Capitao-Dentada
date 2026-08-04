@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cjphl544pbtc1"]
+
+[ext_resource type="Script" uid="uid://dartdp3lofgsl" path="res://Cenas/naval_3d/combate/bomba.gd" id="1_24vax"]
+[ext_resource type="PackedScene" uid="uid://vre4r2erdhet" path="res://Assets/naval_3d/models_glb/cannon-ball.glb" id="1_wsye4"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_x5pgy"]
+radius = 0.2954147
+
+[node name="Bomba" type="Area3D" unique_id=1298996456]
+script = ExtResource("1_24vax")
+
+[node name="ModeloBomba" parent="." unique_id=1175617172 instance=ExtResource("1_wsye4")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1550849045]
+shape = SubResource("SphereShape3D_x5pgy")

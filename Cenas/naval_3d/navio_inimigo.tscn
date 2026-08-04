@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dq2p3574fou1e"]
+
+[ext_resource type="Script" uid="uid://wrat78iey4dg" path="res://Cenas/naval_3d/navio_inimigo.gd" id="1_ua5cp"]
+[ext_resource type="PackedScene" uid="uid://cjphl544pbtc1" path="res://Cenas/naval_3d/combate/bomba.tscn" id="2_2h6gv"]
+[ext_resource type="PackedScene" uid="uid://br720g0b574al" path="res://Assets/naval_3d/models_glb/ship-medium.glb" id="3_wmc61"]
+[ext_resource type="PackedScene" uid="uid://dr5bawe65vnpx" path="res://Assets/naval_3d/models_glb/cannon.glb" id="4_msupb"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nlm22"]
+size = Vector3(1, 3.8041992, 4.6312866)
+
+[node name="NavioMedioInimigo" type="CharacterBody3D" unique_id=641004950 node_paths=PackedStringArray("saida_bomba") groups=["inimigos"]]
+motion_mode = 1
+script = ExtResource("1_ua5cp")
+cena_bomba = ExtResource("2_2h6gv")
+saida_bomba = NodePath("SaidaBombaDireita")
+
+[node name="NavioMedioCedro" parent="." unique_id=353058160 instance=ExtResource("3_wmc61")]
+
+[node name="cannon2" parent="NavioMedioCedro" unique_id=930676533 instance=ExtResource("4_msupb")]
+transform = Transform3D(0.0010525519, -0.009153473, -0.59992933, 0.00023282564, 0.5999301, -0.009153077, 0.599999, -0.00021674135, 0.0010559838, -1.4118199, 2.0481343, -0.5525976)
+
+[node name="Colisao" type="CollisionShape3D" parent="." unique_id=250816890]
+transform = Transform3D(4, 0, 0, 0, 2, 0, 0, 0, 2, -0.036567688, 3.9963713, -0.30212402)
+shape = SubResource("BoxShape3D_nlm22")
+
+[node name="SaidaBombaDireita" type="Marker3D" parent="." unique_id=1912004575]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.095617, 2.4481118, -0.55409795)
+
+[editable path="NavioMedioCedro"]
