@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://ct88tmggykxnr"]
+
+[ext_resource type="Script" uid="uid://vq01sqoeksrs" path="res://Scripts/naval_3d/navio_jogador.gd" id="1_eqaxt"]
+[ext_resource type="PackedScene" uid="uid://b3fifssrgoeo1" path="res://Assets/naval_3d/models_glb/ship-pirate-medium.glb" id="2_eqaxt"]
+[ext_resource type="PackedScene" uid="uid://cjphl544pbtc1" path="res://Cenas/naval_3d/combate/bomba.tscn" id="2_nlm22"]
+[ext_resource type="PackedScene" uid="uid://dr5bawe65vnpx" path="res://Assets/naval_3d/models_glb/cannon.glb" id="4_5yk7o"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nlm22"]
+size = Vector3(1, 1.3686523, 4.248291)
+
+[node name="NavioMedioJogador" type="CharacterBody3D" unique_id=641004950 node_paths=PackedStringArray("saida_bomba_direita") groups=["jogador"]]
+motion_mode = 1
+script = ExtResource("1_eqaxt")
+cena_bomba = ExtResource("2_nlm22")
+saida_bomba_direita = NodePath("SaidaBombaDireita")
+duracao_intro_camera = 3.0
+
+[node name="CameraPrincipal" type="Camera3D" parent="." unique_id=1497612215]
+transform = Transform3D(-1, 5.6021822e-08, -6.7114065e-08, 0, 0.76769537, 0.64081496, 8.742278e-08, 0.64081496, -0.76769537, -5.857022e-07, 14.699653, -12.699653)
+current = true
+
+[node name="Colisao" type="CollisionShape3D" parent="." unique_id=250816890]
+transform = Transform3D(4, 0, 0, 0, 2, 0, 0, 0, 2, -0.036567688, 1.5608244, -0.4734497)
+shape = SubResource("BoxShape3D_nlm22")
+
+[node name="NavioMedioDentada" parent="." unique_id=1185045209 instance=ExtResource("2_eqaxt")]
+
+[node name="cannon2" parent="NavioMedioDentada" unique_id=930676533 instance=ExtResource("4_5yk7o")]
+transform = Transform3D(0.0010525519, -0.009153473, -0.59992933, 0.00023282564, 0.5999301, -0.009153077, 0.599999, -0.00021674135, 0.0010559838, -1.4118199, 2.0481343, -0.5525976)
+
+[node name="SaidaBombaDireita" type="Marker3D" parent="." unique_id=1912004575]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.095617, 2.4481118, -0.55409795)
+
+[editable path="NavioMedioDentada"]

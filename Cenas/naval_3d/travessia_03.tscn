@@ -1,0 +1,1036 @@
+[gd_scene format=3 uid="uid://sbolumibxrbo"]
+
+[ext_resource type="PackedScene" uid="uid://8why6jop5r0y" path="res://Cenas/naval_3d/navio_inimigo_cedro.tscn" id="1_gp26t"]
+[ext_resource type="PackedScene" uid="uid://bv8vw8oj81kf7" path="res://Cenas/naval_3d/navio_grande_jogador.tscn" id="2_a0dn4"]
+[ext_resource type="Shader" uid="uid://dvewi5jbadkkr" path="res://Cenas/naval_3d/travessia_01.gdshader" id="2_qb6oo"]
+[ext_resource type="PackedScene" uid="uid://rjiq6t3stnj7" path="res://Assets/naval_3d/models_glb/barrel.glb" id="3_hl2qp"]
+[ext_resource type="PackedScene" uid="uid://c7bp6mqpnmiud" path="res://Assets/naval_3d/models_glb/patch-grass-foliage.glb" id="4_w224a"]
+[ext_resource type="PackedScene" uid="uid://dqlhxljiwk8l4" path="res://Assets/naval_3d/models_glb/palm-bend.glb" id="5_gp26t"]
+[ext_resource type="PackedScene" uid="uid://1eeo8bpxn6h2" path="res://Assets/naval_3d/models_glb/patch-sand.glb" id="6_a0dn4"]
+[ext_resource type="PackedScene" uid="uid://g35g3e7pi4he" path="res://Assets/naval_3d/models_glb/palm-detailed-straight.glb" id="7_kegdj"]
+[ext_resource type="PackedScene" uid="uid://d5i4gkqm8pfd" path="res://Assets/naval_3d/models_glb/hole.glb" id="8_38fs8"]
+[ext_resource type="PackedScene" uid="uid://by04abahwci8x" path="res://Assets/naval_3d/models_glb/grass-plant.glb" id="9_1gc18"]
+[ext_resource type="PackedScene" uid="uid://fpqf88c5rckg" path="res://Assets/naval_3d/models_glb/grass-patch.glb" id="10_ypr11"]
+[ext_resource type="PackedScene" uid="uid://c4lvpbimranin" path="res://Assets/naval_3d/models_glb/rocks-a.glb" id="11_1cipv"]
+[ext_resource type="PackedScene" uid="uid://ry1347ms05m8" path="res://Assets/naval_3d/models_glb/rocks-sand-c.glb" id="12_t30jo"]
+[ext_resource type="PackedScene" uid="uid://djioaqu6k4gmn" path="res://Assets/naval_3d/models_glb/rocks-c.glb" id="13_3pobi"]
+[ext_resource type="PackedScene" uid="uid://cigailcdr6nvv" path="res://Assets/naval_3d/models_glb/flag-pirate-high.glb" id="14_u7253"]
+[ext_resource type="PackedScene" uid="uid://d1xa2cwhrhv4r" path="res://Assets/naval_3d/models_glb/structure-platform-dock-small.glb" id="15_6uts5"]
+[ext_resource type="PackedScene" uid="uid://b66rokglew1ke" path="res://Assets/naval_3d/models_glb/platform-planks.glb" id="16_spn4d"]
+[ext_resource type="PackedScene" uid="uid://yt8w4f8pw2g4" path="res://Assets/naval_3d/models_glb/palm-detailed-bend.glb" id="17_a0o4f"]
+[ext_resource type="PackedScene" uid="uid://dtmv8cbbbje70" path="res://Assets/naval_3d/models_glb/crate-bottles.glb" id="18_noplc"]
+[ext_resource type="PackedScene" uid="uid://cvm81l3w145vp" path="res://Assets/naval_3d/models_glb/mast.glb" id="19_ixtqm"]
+[ext_resource type="PackedScene" uid="uid://dby6xv4073wa0" path="res://Assets/naval_3d/models_glb/grass.glb" id="20_2aaxb"]
+[ext_resource type="PackedScene" uid="uid://bf1v51o5pjksh" path="res://Assets/naval_3d/models_glb/palm-straight.glb" id="21_hp87i"]
+[ext_resource type="PackedScene" uid="uid://ujc37kbu8i0j" path="res://Assets/naval_3d/models_glb/structure-platform-dock.glb" id="22_5040k"]
+[ext_resource type="PackedScene" uid="uid://kaqbq3cgoi0x" path="res://Assets/naval_3d/models_glb/chest.glb" id="23_prwc7"]
+[ext_resource type="PackedScene" uid="uid://bohpvqkmltrjq" path="res://Assets/naval_3d/models_glb/boat-row-small.glb" id="24_wbkar"]
+[ext_resource type="PackedScene" uid="uid://cswbglck87y4n" path="res://Assets/naval_3d/models_glb/rocks-sand-a.glb" id="26_p7o8o"]
+[ext_resource type="PackedScene" uid="uid://0oj41vv2y8rj" path="res://Assets/naval_3d/models_glb/ship-wreck.glb" id="27_06c78"]
+[ext_resource type="PackedScene" uid="uid://dogxjwc4qybv8" path="res://Assets/naval_3d/models_glb/patch-sand-foliage.glb" id="28_8hsfy"]
+[ext_resource type="PackedScene" uid="uid://kcrhfeysmbio" path="res://Assets/naval_3d/models_glb/patch-grass.glb" id="29_6i3i4"]
+[ext_resource type="PackedScene" uid="uid://c1v1g20qwfryh" path="res://Assets/naval_3d/models_glb/tool-shovel.glb" id="30_vur3j"]
+[ext_resource type="PackedScene" uid="uid://ckcabcbptgual" path="res://Assets/naval_3d/models_glb/structure-roof.glb" id="31_10jhs"]
+[ext_resource type="PackedScene" uid="uid://cqwhrtcdyi8df" path="res://Assets/naval_3d/models_glb/structure.glb" id="32_yorfl"]
+[ext_resource type="PackedScene" uid="uid://cuag0gfyfecae" path="res://Assets/naval_3d/models_glb/structure-platform.glb" id="33_ka3pw"]
+[ext_resource type="PackedScene" uid="uid://bcru66ibem2cw" path="res://Assets/naval_3d/models_glb/flag-pennant.glb" id="34_dgmyu"]
+[ext_resource type="PackedScene" uid="uid://b30klchxcutgx" path="res://Assets/naval_3d/models_glb/structure-fence-sides.glb" id="35_jq8ln"]
+[ext_resource type="PackedScene" uid="uid://b1q5641fir4cl" path="res://Assets/naval_3d/models_glb/tool-paddle.glb" id="36_p4pm6"]
+[ext_resource type="Script" uid="uid://b5e3sabshi74m" path="res://Cenas/naval_3d/hud_travessia_chefe.gd" id="37_w224a"]
+[ext_resource type="Texture2D" uid="uid://dtmp6eietrxyy" path="res://Assets/Wood and Paper UI/Sprites/Prefabs/9.png" id="39_i2jie"]
+[ext_resource type="FontFile" uid="uid://2k3k15u0dqwt" path="res://Assets/Wood and Paper UI/Fonts/BigPirata/fonte_pirata_bitmap.fnt" id="40_p78yd"]
+[ext_resource type="Texture2D" uid="uid://f5i2d0fhvmq7" path="res://Assets/Wood and Paper UI/Sprites/Life Bars/Big Bars/1.png" id="41_qavot"]
+[ext_resource type="Texture2D" uid="uid://nom0oi8rfxh0" path="res://Assets/Wood and Paper UI/Sprites/Life Bars/Big Bars/3.png" id="42_i3n6v"]
+[ext_resource type="Texture2D" uid="uid://hiq5bkct8uhe" path="res://Assets/Wood and Paper UI/Sprites/Life Bars/Big Bars/4.png" id="43_a35b7"]
+[ext_resource type="Texture2D" uid="uid://bxrhisw0yud1v" path="res://Assets/Wood and Paper UI/Sprites/Life Bars/Colors/1.png" id="44_83m2s"]
+[ext_resource type="Texture2D" uid="uid://dbymi6q5p35qf" path="res://Assets/Wood and Paper UI/Sprites/Life Bars/Big Bars/2.png" id="45_pnocg"]
+[ext_resource type="Texture2D" uid="uid://bkq3ifqjh5e3d" path="res://Assets/Wood and Paper UI/Sprites/Prefabs/12.png" id="46_qu6fa"]
+[ext_resource type="PackedScene" uid="uid://0hgrc6guo1fv" path="res://Assets/naval_3d/models_glb/cannon-mobile.glb" id="47_tve3g"]
+[ext_resource type="Texture2D" uid="uid://fxsrpcbndmn2" path="res://Assets/Wood and Paper UI/Sprites/Green Button/2.png" id="47_w224a"]
+[ext_resource type="Texture2D" uid="uid://bn6pop4q2fobh" path="res://Assets/Wood and Paper UI/Sprites/Green Button/3.png" id="48_gp26t"]
+[ext_resource type="PackedScene" uid="uid://btprw5xh35ac1" path="res://Assets/naval_3d/models_glb/castle-wall.glb" id="48_k8hbe"]
+[ext_resource type="PackedScene" uid="uid://c2esexmarcpjt" path="res://Assets/naval_3d/models_glb/castle-gate.glb" id="49_7i6rq"]
+[ext_resource type="Texture2D" uid="uid://kmtknlbr8j2n" path="res://Assets/Wood and Paper UI/Sprites/Green Button/4.png" id="49_a0dn4"]
+[ext_resource type="PackedScene" uid="uid://dg8hkltb03h3h" path="res://Assets/naval_3d/models_glb/tower-complete-large.glb" id="50_06ir7"]
+[ext_resource type="PackedScene" uid="uid://y3asn73udgr6" path="res://Assets/naval_3d/models_glb/tower-complete-small.glb" id="51_m7460"]
+[ext_resource type="PackedScene" uid="uid://ck8635orpsse3" path="res://Assets/naval_3d/models_glb/rocks-b.glb" id="52_nisqy"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_e0u37"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_sb1gb"]
+sky_material = SubResource("ProceduralSkyMaterial_e0u37")
+
+[sub_resource type="Environment" id="Environment_blkgo"]
+background_mode = 2
+sky = SubResource("Sky_sb1gb")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_j7631"]
+render_priority = 0
+shader = ExtResource("2_qb6oo")
+shader_parameter/cor_funda = Color(0.02, 0.18, 0.35, 1)
+shader_parameter/cor_media = Color(0.02, 0.3, 0.5, 1)
+shader_parameter/cor_clara = Color(0.05, 0.48, 0.68, 1)
+shader_parameter/amplitude = 0.18
+shader_parameter/frequencia = 0.35
+shader_parameter/velocidade = 1.2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_sb1gb"]
+size = Vector2(300, 300)
+subdivide_width = 64
+subdivide_depth = 64
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_as3ia"]
+size = Vector3(359.75488, 20, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xnwdf"]
+size = Vector3(362.47754, 20, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nrsit"]
+size = Vector3(2, 20, 289.1875)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qh6yw"]
+size = Vector3(2, 20, 289.90442)
+
+[node name="Travessia03" type="Node3D" unique_id=102362562]
+
+[node name="NavioInimigoCedro" parent="." unique_id=641004950 instance=ExtResource("1_gp26t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -187.43994, 0, 0)
+vida_maxima = 400
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1104447254]
+environment = SubResource("Environment_blkgo")
+
+[node name="Oceano" type="MeshInstance3D" parent="." unique_id=1354484614]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.013809204, 0.070043944, 0.12601471)
+material_override = SubResource("ShaderMaterial_j7631")
+mesh = SubResource("PlaneMesh_sb1gb")
+
+[node name="LuzSol" type="DirectionalLight3D" parent="." unique_id=2028286990]
+transform = Transform3D(0.8660254, 0.43301272, -0.24999999, 0, 0.49999997, 0.86602545, 0.5, -0.75, 0.43301266, 0, 0, 0)
+
+[node name="Ilha01" type="Node3D" parent="." unique_id=1183184581]
+transform = Transform3D(-0.99999845, 0, -0.0017486484, 0, 1, 0, 0.0017486484, 0, -0.99999845, 0, -0.8776243, -11.139006)
+
+[node name="barrel2" parent="Ilha01" unique_id=97083052 instance=ExtResource("3_hl2qp")]
+transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -3.6981356, 1.6475315, 1.814255)
+
+[node name="patch-grass-foliage3" parent="Ilha01" unique_id=16863154 instance=ExtResource("4_w224a")]
+
+[node name="palm-bend2" parent="Ilha01" unique_id=300878337 instance=ExtResource("5_gp26t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9611363, 1.0988426, 0)
+
+[node name="patch-grass-foliage2" parent="Ilha01" unique_id=2133065296 instance=ExtResource("4_w224a")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -1.7052207, 1.3952289, 11.883608)
+
+[node name="patch-sand2" parent="Ilha01" unique_id=1865247934 instance=ExtResource("6_a0dn4")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -0.8963723, 0.81483555, 4.9936934)
+
+[node name="palm-detailed-straight2" parent="Ilha01" unique_id=648049748 instance=ExtResource("7_kegdj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5791664, 1.1617534, 1.7668352)
+
+[node name="hole2" parent="Ilha01" unique_id=329791082 instance=ExtResource("8_38fs8")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 4.1392636, 1.7218094, 4.6897984)
+
+[node name="grass-plant2" parent="Ilha01" unique_id=482896366 instance=ExtResource("9_1gc18")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.560083, 2.2700162, 10.716629)
+
+[node name="grass-patch2" parent="Ilha01" unique_id=879729988 instance=ExtResource("10_ypr11")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.771021, 2.3941493, 8.804487)
+
+[node name="grass-patch3" parent="Ilha01" unique_id=1140324726 instance=ExtResource("10_ypr11")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.382129, 2.4211335, 7.819269)
+
+[node name="rocks-a2" parent="Ilha01" unique_id=1948771815 instance=ExtResource("11_1cipv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.2597303, 0.6622548, 15.269823)
+
+[node name="rocks-sand-c2" parent="Ilha01" unique_id=205561791 instance=ExtResource("12_t30jo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.159277, 0, 6.5216103)
+
+[node name="rocks-c2" parent="Ilha01" unique_id=452048003 instance=ExtResource("13_3pobi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.0955086, 16.657394)
+
+[node name="ColisaoIlha" type="StaticBody3D" parent="Ilha01" unique_id=1373402126]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="Ilha01/ColisaoIlha" unique_id=1713393011]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0.4715929, 0)
+depth = 2.0
+polygon = PackedVector2Array(8.206545, 3.0256953, 9.636737, 1.4395761, 8.058984, -1.7311544, 10.733353, -5.6602726, 10.455606, -8.9773445, 8.703924, -10.904854, 9.143104, -12.271778, 8.659984, -14.741268, 6.500888, -16.243082, 4.1028547, -16.70711, 1.4137856, -18.541004, -0.67452127, -19.708323, -3.16108, -20.164505, -5.3596754, -19.927546, -6.547338, -19.58327, -8.953521, -20.037348, -10.296023, -19.77395, -11.155068, -18.197382, -9.851018, -15.8542, -8.880509, -14.666834, -10.413328, -13.9396, -11.521237, -12.264116, -11.977742, -11.029375, -11.72936, -9.611391, -11.460987, -8.5808525, -10.695565, -7.926779, -11.073751, -6.673376, -11.788235, -5.107273, -11.628822, -3.426958, -11.036864, -2.3675013, -9.792941, -1.445818, -8.4583645, -0.6803093, -6.5669303, 0.134449, -5.077975, 0.6860943, -3.3416078, 2.449851, -1.6926314, 3.4879951, -1.3903289, 5.7093396, 0.2562877, 5.616695, 0.61078316, 3.8710365, 5.766126, 3.2916627)
+
+[node name="flag-pirate-high2" parent="Ilha01" unique_id=756690169 instance=ExtResource("14_u7253")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.37536657, 2.2668755, 9.940556)
+
+[node name="structure-platform-dock-small2" parent="Ilha01" unique_id=549229132 instance=ExtResource("15_6uts5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5766449, 0.60469425, -4.5166984)
+
+[node name="platform-planks2" parent="Ilha01" unique_id=528884940 instance=ExtResource("16_spn4d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5471742, 1.4715939, 0.48428535)
+
+[node name="platform-planks3" parent="Ilha01" unique_id=1895885887 instance=ExtResource("16_spn4d")]
+transform = Transform3D(0.4439985, -0.08941025, 0.8915554, 0.039857652, 0.99599487, 0.08003475, -0.8951406, 0, 0.4457839, 2.5964806, 1.4715939, -0.22513199)
+
+[node name="rocks-a3" parent="Ilha01" unique_id=1197626167 instance=ExtResource("11_1cipv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.846095, 0.20606995, 7.401167)
+
+[node name="Ilha02" type="Node3D" parent="." unique_id=804610961]
+transform = Transform3D(0.5841273, 0, 0.8116621, 0, 1, 0, -0.8116621, 0, 0.5841273, 0, 0, 110.76207)
+
+[node name="flag-pirate-high3" parent="Ilha02" unique_id=805452480 instance=ExtResource("14_u7253")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -6.300544, 1.8864746, 5.4167547)
+
+[node name="patch-grass-foliage7" parent="Ilha02" unique_id=461672379 instance=ExtResource("4_w224a")]
+transform = Transform3D(-3.8314357, 0, 5.858336, 0, 9, 0, -5.858336, 0, -3.8314357, -35.28508, 0.08213276, 21.191353)
+
+[node name="palm-detailed-bend3" parent="Ilha02" unique_id=561158042 instance=ExtResource("17_a0o4f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.36048, 1.8553147, -9.536743e-07)
+
+[node name="crate-bottles2" parent="Ilha02" unique_id=736436770 instance=ExtResource("18_noplc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.650524, 0.76169777, -8.780447)
+
+[node name="barrel2" parent="Ilha02" unique_id=1432310435 instance=ExtResource("3_hl2qp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33.359344, 4.784127, 19.04247)
+
+[node name="mast2" parent="Ilha02" unique_id=2126553452 instance=ExtResource("19_ixtqm")]
+transform = Transform3D(0.95051247, 0.24593538, -0.18984684, -0.28603053, 0.93126565, -0.22567877, 0.12129543, 0.26881248, 0.9555246, -32.772305, 1.3376019, 22.848671)
+
+[node name="grass2" parent="Ilha02" unique_id=1143641954 instance=ExtResource("20_2aaxb")]
+transform = Transform3D(2.999479, 0.055900645, 0, -0.055900645, 2.999479, 0, 0, 0, 3, -20.822329, 2.3526943, 39.1317)
+
+[node name="grass-plant2" parent="Ilha02" unique_id=107572458 instance=ExtResource("9_1gc18")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12.083016, 2.4037876, 26.163586)
+
+[node name="palm-detailed-straight2" parent="Ilha02" unique_id=469281241 instance=ExtResource("7_kegdj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.845085, 1.6931152, 37.4852)
+
+[node name="palm-straight2" parent="Ilha02" unique_id=238884743 instance=ExtResource("21_hp87i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.78416, 0.6287904, 19.092442)
+
+[node name="palm-bend2" parent="Ilha02" unique_id=1649137764 instance=ExtResource("5_gp26t")]
+transform = Transform3D(0.4046383, 0, -0.9144768, 0, 1, 0, 0.9144768, 0, 0.4046383, 9.536743e-07, 1.5068216, 18.667656)
+
+[node name="patch-grass-foliage6" parent="Ilha02" unique_id=1354262752 instance=ExtResource("4_w224a")]
+transform = Transform3D(2.8748317, 0, -0.8575212, 0, 3, 0, 0.8575212, 0, 2.8748317, -30.887825, 2.114585, 17.18063)
+
+[node name="structure-platform-dock3" parent="Ilha02" unique_id=1793065455 instance=ExtResource("22_5040k")]
+transform = Transform3D(0.8274321, 0, 0.5615658, 0, 1, 0, -0.5615658, 0, 0.8274321, -27.887278, 0, -21.565475)
+
+[node name="structure-platform-dock2" parent="Ilha02" unique_id=374701422 instance=ExtResource("22_5040k")]
+transform = Transform3D(0.5841273, 0, -0.8116621, 0, 1, 0, 0.8116621, 0, 0.5841273, 21.734764, 0, -7.153656)
+
+[node name="chest2" parent="Ilha02" unique_id=1147798925 instance=ExtResource("23_prwc7")]
+transform = Transform3D(-0.8671857, 0, 0.49798492, 0, 1, 0, -0.49798492, 0, -0.8671857, 9.536743e-07, 4.396022, -19.10811)
+
+[node name="boat-row-small2" parent="Ilha02" unique_id=1794681909 instance=ExtResource("24_wbkar")]
+transform = Transform3D(0.06366625, 0, -0.99797124, 0, 1, 0, 0.99797124, 0, 0.06366625, 22.58501, 0.051213264, -4.6894493)
+
+[node name="rocks-sand-a2" parent="Ilha02" unique_id=1805249854 instance=ExtResource("26_p7o8o")]
+transform = Transform3D(0.67593795, 0, 0.73695856, 0, 1, 0, -0.73695856, 0, 0.67593795, 1.2423975, -0.25622702, -16.42297)
+
+[node name="ship-wreck2" parent="Ilha02" unique_id=602693952 instance=ExtResource("27_06c78")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -2.3493872, 0, -20.689793)
+
+[node name="rocks-sand-c2" parent="Ilha02" unique_id=1190212518 instance=ExtResource("12_t30jo")]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 1.9214246, -0.83733463, -18.363205)
+
+[node name="patch-grass-foliage5" parent="Ilha02" unique_id=512262536 instance=ExtResource("4_w224a")]
+transform = Transform3D(1.5172682, 0, 4.764231, 0, 5, 0, -4.764231, 0, 1.5172682, -38.584446, 0, -2.8347874)
+
+[node name="patch-sand-foliage4" parent="Ilha02" unique_id=704741663 instance=ExtResource("28_8hsfy")]
+transform = Transform3D(-2.975526, 0, 0.3824193, 0, 3, 0, -0.3824193, 0, -2.975526, -22.413706, 0, -12.972131)
+
+[node name="patch-sand2" parent="Ilha02" unique_id=1036607255 instance=ExtResource("6_a0dn4")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, -7.337714, 0, -11.816823)
+
+[node name="rocks-c2" parent="Ilha02" unique_id=2097626953 instance=ExtResource("13_3pobi")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 4.458416, 0, -15.670029)
+
+[node name="rocks-a2" parent="Ilha02" unique_id=1782813244 instance=ExtResource("11_1cipv")]
+transform = Transform3D(1.6510886, 0, -1.1286747, 0, 2, 0, 1.1286747, 0, 1.6510886, 8.130878, 0, -13.198385)
+
+[node name="patch-sand-foliage3" parent="Ilha02" unique_id=108926223 instance=ExtResource("28_8hsfy")]
+transform = Transform3D(2.0215168, 0, 3.4515896, 0, 4, 0, -3.4515896, 0, 2.0215168, 10.49214, 0, 21.807566)
+
+[node name="patch-grass3" parent="Ilha02" unique_id=2069157994 instance=ExtResource("29_6i3i4")]
+transform = Transform3D(-4.7288156, 0, 6.452775, 0, 8, 0, -6.452775, 0, -4.7288156, -17.68584, 0, 31.263672)
+
+[node name="patch-grass-foliage4" parent="Ilha02" unique_id=1726047369 instance=ExtResource("4_w224a")]
+transform = Transform3D(-6.791027, 0, -1.6976306, 0, 7, 0, 1.6976306, 0, -6.791027, -6.6782684, -0.0780144, 16.085693)
+
+[node name="patch-grass-foliage3" parent="Ilha02" unique_id=2119858126 instance=ExtResource("4_w224a")]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, -17.439373, 0, 5.7695847)
+
+[node name="patch-grass-foliage2" parent="Ilha02" unique_id=746321089 instance=ExtResource("4_w224a")]
+transform = Transform3D(-0.3252678, 0, -5.991177, 0, 6, 0, 5.991177, 0, -0.3252678, 0, 0, -1.5041733)
+
+[node name="patch-sand-foliage2" parent="Ilha02" unique_id=253275621 instance=ExtResource("28_8hsfy")]
+transform = Transform3D(-0.46933338, 0, 2.9630604, 0, 3, 0, -2.9630604, 0, -0.46933338, 12.930825, -0.20723343, -0.5447719)
+
+[node name="ColisaoIlha" type="StaticBody3D" parent="Ilha02" unique_id=921111251]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="Ilha02/ColisaoIlha" unique_id=1864570427]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+polygon = PackedVector2Array(20.30661, -1.863945, 18.006432, -5.094757, 16.750374, -8.112556, 16.8088, -9.3845215, 18.7762, -9.339798, 21.66565, -12.402145, 22.792427, -15.476158, 22.025658, -18.141823, 22.876694, -22.499763, 21.909767, -24.96669, 19.728203, -26.936615, 17.92128, -29.665268, 15.950417, -31.769203, 10.952629, -33.08071, 7.1905975, -34.759773, 3.9181595, -34.658203, 3.60009, -36.392174, 2.3196259, -38.7797, 0.54309845, -39.680794, -4.571129, -40.006927, -7.00914, -47.201088, -10.757156, -50.14559, -14.030518, -50.430077, -19.905525, -47.750977, -24.737762, -47.034966, -27.394875, -43.54355, -28.229797, -40.284897, -31.947304, -36.751488, -38.569466, -34.863487, -42.97721, -34.044037, -44.000923, -31.656952, -46.062263, -27.586952, -48.23362, -24.810951, -49.44007, -21.687645, -47.266823, -15.784973, -47.430443, -11.21698, -46.775566, -6.580574, -46.23414, -4.075157, -49.022865, 0.9656944, -46.236473, 5.4880447, -45.377983, 8.958565, -41.588326, 11.853672, -37.559975, 14.4171295, -33.91278, 12.8467865, -32.017845, 18.379253, -29.08506, 19.558586, -29.48626, 21.957024, -27.973595, 23.112152, -25.19455, 21.82914, -17.676369, 19.66526, -15.559273, 16.490318, -14.2067795, 14.610985, -9.028542, 18.841011, -6.3092117, 19.959, -5.811531, 31.392296, 0.57257843, 30.449165, 1.950058, 21.540009, 4.491783, 19.174072, 8.0811615, 16.051868, 10.591896, 13.495827, 13.2441635, 11.209446, 16.054123, 10.193737, 17.35537, 7.5038033, 19.4263, 7.27166, 22.209435, 8.821297, 23.29351, 7.062996, 22.55281, 6.0766296, 23.62513, 5.2164764, 23.62014, 4.215618, 20.901718, 3.709816, 20.497635, 1.8777924, 20.065056, 0.8412056, 21.30207, -0.62571716, 21.330559, -1.4211502)
+
+[node name="CasaArvore" type="Node3D" parent="Ilha02" unique_id=269427894]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.515543, 2.218114, 28.528843)
+
+[node name="tool-shovel2" parent="Ilha02/CasaArvore" unique_id=1653227764 instance=ExtResource("30_vur3j")]
+transform = Transform3D(-0.090086, 0.8879927, -0.45094743, -0.14092791, 0.43686655, 0.8884183, 0.9859128, 0.14358515, 0.08578737, -7.2978945, 0.070139095, -11.303731)
+
+[node name="chest2" parent="Ilha02/CasaArvore" unique_id=1559517562 instance=ExtResource("23_prwc7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.450581e-09, 2.1488872, -0.024152517)
+
+[node name="structure-roof3" parent="Ilha02/CasaArvore" unique_id=2031416135 instance=ExtResource("31_10jhs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7392159, 2.8247504, -14.633852)
+
+[node name="structure3" parent="Ilha02/CasaArvore" unique_id=1629078139 instance=ExtResource("32_yorfl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7451334, 0.70123386, -14.694242)
+
+[node name="structure-platform2" parent="Ilha02/CasaArvore" unique_id=806423429 instance=ExtResource("33_ka3pw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3841858e-07, 1.4454451, -7.4229784)
+
+[node name="flag-pennant2" parent="Ilha02/CasaArvore" unique_id=1887798292 instance=ExtResource("34_dgmyu")]
+transform = Transform3D(0.41305938, 0, -0.9107041, 0, 1, 0, 0.9107041, 0, 0.41305938, 0, 5.08034, 0)
+
+[node name="structure-platform-dock2" parent="Ilha02/CasaArvore" unique_id=1387864786 instance=ExtResource("22_5040k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2920794, -2.4491012)
+
+[node name="structure-fence-sides2" parent="Ilha02/CasaArvore" unique_id=2120962773 instance=ExtResource("35_jq8ln")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.11715889, -4.969968)
+
+[node name="structure-roof2" parent="Ilha02/CasaArvore" unique_id=442360542 instance=ExtResource("31_10jhs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0892968, 0)
+
+[node name="structure2" parent="Ilha02/CasaArvore" unique_id=1717192117 instance=ExtResource("32_yorfl")]
+
+[node name="structure-platform3" parent="Ilha02/CasaArvore" unique_id=1156050183 instance=ExtResource("33_ka3pw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.3841858e-07, 1.4454451, -9.915476)
+
+[node name="structure-platform4" parent="Ilha02/CasaArvore" unique_id=901089860 instance=ExtResource("33_ka3pw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.8056245e-07, 1.4454451, -12.35601)
+
+[node name="structure-platform5" parent="Ilha02/CasaArvore" unique_id=1817191484 instance=ExtResource("33_ka3pw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4943445, 1.4454451, -9.830902)
+
+[node name="structure-platform6" parent="Ilha02/CasaArvore" unique_id=1398136565 instance=ExtResource("33_ka3pw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5046213, 1.4454451, -12.2961445)
+
+[node name="flag-pennant3" parent="Ilha02/CasaArvore" unique_id=1137521709 instance=ExtResource("34_dgmyu")]
+transform = Transform3D(0.29370448, 0, -0.95589626, 0, 1, 0, 0.95589626, 0, 0.29370448, -2.636089, 6.184109, -14.573345)
+
+[node name="palm-detailed-bend2" parent="Ilha02" unique_id=483829165 instance=ExtResource("17_a0o4f")]
+transform = Transform3D(-0.7069625, 0, 0.707251, 0, 1, 0, -0.707251, 0, -0.7069625, 0, 1.2303696, -1.9216542)
+
+[node name="palm-bend3" parent="Ilha02" unique_id=297367515 instance=ExtResource("5_gp26t")]
+transform = Transform3D(0.7752869, 0, -0.6316092, 0, 1, 0, 0.6316092, 0, 0.7752869, 16.100628, 0.16103172, 4.7683716e-07)
+
+[node name="grass-plant3" parent="Ilha02" unique_id=719824397 instance=ExtResource("9_1gc18")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12.083016, 2.4037876, 42.726566)
+
+[node name="grass3" parent="Ilha02" unique_id=1380660246 instance=ExtResource("20_2aaxb")]
+transform = Transform3D(2.999479, 0.055900645, 0, -0.055900645, 2.999479, 0, 0, 0, 3, -20.822329, 2.3526943, 31.621511)
+
+[node name="grass4" parent="Ilha02" unique_id=1171997815 instance=ExtResource("20_2aaxb")]
+transform = Transform3D(1.8018458, 0.055900645, 2.397963, -0.033580612, 2.999479, -0.04469032, -2.3983793, 0, 1.8021587, -20.822329, 2.3526943, 37.94382)
+
+[node name="grass5" parent="Ilha02" unique_id=1474302685 instance=ExtResource("20_2aaxb")]
+transform = Transform3D(2.999479, 0.055900645, 0, -0.055900645, 2.999479, 0, 0, 0, 3, -12.319517, 2.1942291, 39.1317)
+
+[node name="grass6" parent="Ilha02" unique_id=1400932888 instance=ExtResource("20_2aaxb")]
+transform = Transform3D(1.9762135, 0.05590064, -2.2564254, -0.03683027, 2.999479, 0.04205251, 2.256817, 0, 1.9765567, -13.001106, 2.2069316, 37.994354)
+
+[node name="barrel3" parent="Ilha02" unique_id=1748029118 instance=ExtResource("3_hl2qp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.040571, 4.783599, 16.994312)
+
+[node name="crate-bottles3" parent="Ilha02" unique_id=1576649888 instance=ExtResource("18_noplc")]
+transform = Transform3D(-0.056294035, 0, 0.9984142, 0, 1, 0, -0.9984142, 0, -0.056294035, -27.64777, 0.76169777, -10.033108)
+
+[node name="palm-straight3" parent="Ilha02" unique_id=735545660 instance=ExtResource("21_hp87i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.189392, 1.6024876, 0)
+
+[node name="tool-paddle2" parent="Ilha02" unique_id=1616413861 instance=ExtResource("36_p4pm6")]
+transform = Transform3D(0.3586493, 0.86046183, -0.3619063, -1.4901161e-08, 0.38769895, 0.92178607, 0.9334724, -0.33059797, 0.13904797, -39.382057, 2.287287, 19.994192)
+
+[node name="tool-paddle3" parent="Ilha02" unique_id=843782839 instance=ExtResource("36_p4pm6")]
+transform = Transform3D(0.55910695, 0.7378167, -0.3781879, 0.14496991, 0.3621195, 0.9207895, 0.81632304, -0.5696457, 0.09550232, -38.767178, 2.270331, 21.574675)
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=2081210895]
+script = ExtResource("37_w224a")
+
+[node name="FundoTitulo" type="TextureRect" parent="HUD" unique_id=1660502481]
+visible = false
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -128.0
+offset_top = 23.0
+offset_right = 130.0
+offset_bottom = 169.0
+grow_horizontal = 2
+texture = ExtResource("39_i2jie")
+
+[node name="TituloTravessia" type="Label" parent="HUD" unique_id=369522900]
+visible = false
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 40.0
+offset_bottom = 140.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("40_p78yd")
+text = "TRAVESSIA III
+
+TERRITÓRIO DA
+MARINHA REAL"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ConteudoHUD" type="Control" parent="HUD" unique_id=690600012]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VidaJogador" type="Control" parent="HUD/ConteudoHUD" unique_id=1306059743]
+anchors_preset = 0
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 120.0
+offset_bottom = 56.0
+scale = Vector2(2, 2)
+
+[node name="Moldura" type="HBoxContainer" parent="HUD/ConteudoHUD/VidaJogador" unique_id=1848469419]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/separation = 0
+
+[node name="Inicio" type="TextureRect" parent="HUD/ConteudoHUD/VidaJogador/Moldura" unique_id=1501014290]
+layout_mode = 2
+texture = ExtResource("41_qavot")
+
+[node name="Meio" type="TextureRect" parent="HUD/ConteudoHUD/VidaJogador/Moldura" unique_id=1208745832]
+layout_mode = 2
+texture = ExtResource("42_i3n6v")
+
+[node name="Fim" type="TextureRect" parent="HUD/ConteudoHUD/VidaJogador/Moldura" unique_id=744513017]
+layout_mode = 2
+texture = ExtResource("43_a35b7")
+
+[node name="Preenchimento" type="TextureProgressBar" parent="HUD/ConteudoHUD/VidaJogador" unique_id=430577910]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 18.0
+offset_right = 92.0
+offset_bottom = 20.0
+value = 100.0
+nine_patch_stretch = true
+texture_progress = ExtResource("44_83m2s")
+
+[node name="VidaInimigo" type="Control" parent="HUD/ConteudoHUD" unique_id=1528492390]
+visible = false
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -264.0
+offset_top = 32.0
+offset_right = -168.0
+offset_bottom = 64.0
+grow_horizontal = 0
+scale = Vector2(2.5, 2.5)
+
+[node name="Moldura" type="HBoxContainer" parent="HUD/ConteudoHUD/VidaInimigo" unique_id=1815234178]
+layout_mode = 0
+offset_right = 96.0
+offset_bottom = 40.0
+theme_override_constants/separation = 0
+
+[node name="Inicio" type="TextureRect" parent="HUD/ConteudoHUD/VidaInimigo/Moldura" unique_id=533069124]
+layout_mode = 2
+texture = ExtResource("45_pnocg")
+
+[node name="Meio" type="TextureRect" parent="HUD/ConteudoHUD/VidaInimigo/Moldura" unique_id=2095097244]
+layout_mode = 2
+texture = ExtResource("42_i3n6v")
+
+[node name="Fim" type="TextureRect" parent="HUD/ConteudoHUD/VidaInimigo/Moldura" unique_id=2021550919]
+layout_mode = 2
+texture = ExtResource("43_a35b7")
+
+[node name="Preenchimento" type="TextureProgressBar" parent="HUD/ConteudoHUD/VidaInimigo" unique_id=1920916447]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 18.0
+offset_right = 92.0
+offset_bottom = 20.0
+value = 100.0
+nine_patch_stretch = true
+texture_progress = ExtResource("44_83m2s")
+
+[node name="VidaChefe" type="Control" parent="HUD/ConteudoHUD" unique_id=209361675]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -126.0
+offset_top = 24.0
+offset_right = 97.99994
+offset_bottom = 56.0
+grow_horizontal = 2
+scale = Vector2(2, 2)
+pivot_offset = Vector2(112, 16)
+
+[node name="Moldura" type="HBoxContainer" parent="HUD/ConteudoHUD/VidaChefe" unique_id=2070269501]
+layout_mode = 0
+offset_right = 96.0
+offset_bottom = 40.0
+theme_override_constants/separation = 0
+
+[node name="Inicio" type="TextureRect" parent="HUD/ConteudoHUD/VidaChefe/Moldura" unique_id=1433317335]
+layout_mode = 2
+texture = ExtResource("45_pnocg")
+
+[node name="Meio" type="TextureRect" parent="HUD/ConteudoHUD/VidaChefe/Moldura" unique_id=1627144080]
+layout_mode = 2
+texture = ExtResource("42_i3n6v")
+
+[node name="Meio2" type="TextureRect" parent="HUD/ConteudoHUD/VidaChefe/Moldura" unique_id=2138394202]
+layout_mode = 2
+texture = ExtResource("42_i3n6v")
+
+[node name="Meio3" type="TextureRect" parent="HUD/ConteudoHUD/VidaChefe/Moldura" unique_id=1986138699]
+layout_mode = 2
+texture = ExtResource("42_i3n6v")
+
+[node name="Meio4" type="TextureRect" parent="HUD/ConteudoHUD/VidaChefe/Moldura" unique_id=2079303909]
+layout_mode = 2
+texture = ExtResource("42_i3n6v")
+
+[node name="Meio5" type="TextureRect" parent="HUD/ConteudoHUD/VidaChefe/Moldura" unique_id=1031980848]
+layout_mode = 2
+texture = ExtResource("42_i3n6v")
+
+[node name="Fim" type="TextureRect" parent="HUD/ConteudoHUD/VidaChefe/Moldura" unique_id=267043393]
+layout_mode = 2
+texture = ExtResource("43_a35b7")
+
+[node name="Preenchimento" type="TextureProgressBar" parent="HUD/ConteudoHUD/VidaChefe" unique_id=1352706503]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 18.0
+offset_right = 220.0
+offset_bottom = 20.0
+value = 100.0
+nine_patch_stretch = true
+texture_progress = ExtResource("44_83m2s")
+
+[node name="TelaGameOver" type="Control" parent="HUD" unique_id=1149203573]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FundoEscuro" type="ColorRect" parent="HUD/TelaGameOver" unique_id=95271864]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.6509804)
+
+[node name="FundoConteudo" type="TextureRect" parent="HUD/TelaGameOver" unique_id=355602490]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = -67.0
+offset_right = 123.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("46_qu6fa")
+
+[node name="ConteudoGameOver" type="VBoxContainer" parent="HUD/TelaGameOver" unique_id=1318223816]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TituloGameOver" type="Label" parent="HUD/TelaGameOver/ConteudoGameOver" unique_id=197658250]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("40_p78yd")
+text = "Navio destruído!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoReiniciar" type="Button" parent="HUD/TelaGameOver/ConteudoGameOver" unique_id=1466287878]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="FundoBotao" type="HBoxContainer" parent="HUD/TelaGameOver/ConteudoGameOver/BotaoReiniciar" unique_id=606312108]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="Inicio" type="TextureRect" parent="HUD/TelaGameOver/ConteudoGameOver/BotaoReiniciar/FundoBotao" unique_id=1773183043]
+layout_mode = 2
+texture = ExtResource("47_w224a")
+
+[node name="Meio" type="TextureRect" parent="HUD/TelaGameOver/ConteudoGameOver/BotaoReiniciar/FundoBotao" unique_id=1782456193]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("48_gp26t")
+
+[node name="Fim" type="TextureRect" parent="HUD/TelaGameOver/ConteudoGameOver/BotaoReiniciar/FundoBotao" unique_id=1640883616]
+layout_mode = 2
+texture = ExtResource("49_a0dn4")
+
+[node name="TextoBotao" type="Label" parent="HUD/TelaGameOver/ConteudoGameOver/BotaoReiniciar" unique_id=1033705764]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("40_p78yd")
+text = "reiniciar"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TelaVitoria" type="Control" parent="HUD" unique_id=681758078]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FundoEscuro" type="ColorRect" parent="HUD/TelaVitoria" unique_id=231247153]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.6509804)
+
+[node name="FundoConteudo" type="TextureRect" parent="HUD/TelaVitoria" unique_id=485375836]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -189.0
+offset_top = -67.0
+offset_right = 190.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("46_qu6fa")
+
+[node name="ConteudoVitoria" type="VBoxContainer" parent="HUD/TelaVitoria" unique_id=2071494596]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TituloVitoria" type="Label" parent="HUD/TelaVitoria/ConteudoVitoria" unique_id=1038855737]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("40_p78yd")
+text = "ALMIRANTE CEDRO DERROTADO!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoRejogarBatalha" type="Button" parent="HUD/TelaVitoria/ConteudoVitoria" unique_id=373908778]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="FundoBotao" type="HBoxContainer" parent="HUD/TelaVitoria/ConteudoVitoria/BotaoRejogarBatalha" unique_id=221713975]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="Inicio" type="TextureRect" parent="HUD/TelaVitoria/ConteudoVitoria/BotaoRejogarBatalha/FundoBotao" unique_id=566211017]
+layout_mode = 2
+texture = ExtResource("47_w224a")
+
+[node name="Meio" type="TextureRect" parent="HUD/TelaVitoria/ConteudoVitoria/BotaoRejogarBatalha/FundoBotao" unique_id=420308783]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("48_gp26t")
+
+[node name="Fim" type="TextureRect" parent="HUD/TelaVitoria/ConteudoVitoria/BotaoRejogarBatalha/FundoBotao" unique_id=80910041]
+layout_mode = 2
+texture = ExtResource("49_a0dn4")
+
+[node name="TextoBotao" type="Label" parent="HUD/TelaVitoria/ConteudoVitoria/BotaoRejogarBatalha" unique_id=2105412680]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("40_p78yd")
+text = "Rejogar batalha final"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoReiniciar2" type="Button" parent="HUD/TelaVitoria/ConteudoVitoria" unique_id=16084632]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="FundoBotao" type="HBoxContainer" parent="HUD/TelaVitoria/ConteudoVitoria/BotaoReiniciar2" unique_id=100378682]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="Inicio" type="TextureRect" parent="HUD/TelaVitoria/ConteudoVitoria/BotaoReiniciar2/FundoBotao" unique_id=1314391037]
+layout_mode = 2
+texture = ExtResource("47_w224a")
+
+[node name="Meio" type="TextureRect" parent="HUD/TelaVitoria/ConteudoVitoria/BotaoReiniciar2/FundoBotao" unique_id=1855144109]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("48_gp26t")
+
+[node name="Fim" type="TextureRect" parent="HUD/TelaVitoria/ConteudoVitoria/BotaoReiniciar2/FundoBotao" unique_id=622572957]
+layout_mode = 2
+texture = ExtResource("49_a0dn4")
+
+[node name="TextoBotao" type="Label" parent="HUD/TelaVitoria/ConteudoVitoria/BotaoReiniciar2" unique_id=921378082]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("40_p78yd")
+text = "Voltar do início (fase 1)"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TelaInstrucoes" type="Control" parent="HUD" unique_id=241654452]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FundoEscuro" type="ColorRect" parent="HUD/TelaInstrucoes" unique_id=236680969]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.6509804)
+
+[node name="FundoDialogo" type="NinePatchRect" parent="HUD/TelaInstrucoes" unique_id=1918532050]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -223.0
+offset_top = -136.0
+offset_right = 217.0
+offset_bottom = 135.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("39_i2jie")
+
+[node name="ConteudoInstrucoes" type="VBoxContainer" parent="HUD/TelaInstrucoes" unique_id=1196903385]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TituloInstucoes" type="Label" parent="HUD/TelaInstrucoes/ConteudoInstrucoes" unique_id=1573030721]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("40_p78yd")
+text = "COMO NAVEGAR:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextoInstrucoes" type="Label" parent="HUD/TelaInstrucoes/ConteudoInstrucoes" unique_id=1249514927]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("40_p78yd")
+text = "w - AVANTE
+S - RECUAR
+A - VIRAR PARA BOMBORDO
+D - VIRAR PARA BORESTE
+ESPAÇO - ABRIR FOGO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BotaoEntendido" type="Button" parent="HUD/TelaInstrucoes/ConteudoInstrucoes" unique_id=388950033]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="FundoBotao" type="HBoxContainer" parent="HUD/TelaInstrucoes/ConteudoInstrucoes/BotaoEntendido" unique_id=1951118540]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="Inicio" type="TextureRect" parent="HUD/TelaInstrucoes/ConteudoInstrucoes/BotaoEntendido/FundoBotao" unique_id=1054582015]
+layout_mode = 2
+texture = ExtResource("47_w224a")
+
+[node name="Meio" type="TextureRect" parent="HUD/TelaInstrucoes/ConteudoInstrucoes/BotaoEntendido/FundoBotao" unique_id=526521609]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("48_gp26t")
+
+[node name="Fim" type="TextureRect" parent="HUD/TelaInstrucoes/ConteudoInstrucoes/BotaoEntendido/FundoBotao" unique_id=750408122]
+layout_mode = 2
+texture = ExtResource("49_a0dn4")
+
+[node name="TextoBotao" type="Label" parent="HUD/TelaInstrucoes/ConteudoInstrucoes/BotaoEntendido" unique_id=1741794275]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("40_p78yd")
+text = "ENTENDIDO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FarLands" type="StaticBody3D" parent="." unique_id=1868414714]
+
+[node name="BarreiraNorte" type="CollisionShape3D" parent="FarLands" unique_id=1288651085]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -79.87744, 10, -100)
+shape = SubResource("BoxShape3D_as3ia")
+
+[node name="BarreiraSul" type="CollisionShape3D" parent="FarLands" unique_id=1122059041]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -81.23877, 10, 188.5928)
+shape = SubResource("BoxShape3D_xnwdf")
+
+[node name="BarreiraLeste" type="CollisionShape3D" parent="FarLands" unique_id=1748632831]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 100, 10, 44.59375)
+shape = SubResource("BoxShape3D_nrsit")
+
+[node name="BarreiraOeste" type="CollisionShape3D" parent="FarLands" unique_id=285799888]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -258.56958, 10, 44.95221)
+shape = SubResource("BoxShape3D_qh6yw")
+
+[node name="Ilha03" type="Node3D" parent="." unique_id=1103858072]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -196.00171, 0, 118.971954)
+
+[node name="structure-platform-dock-small2" parent="Ilha03" unique_id=918631284 instance=ExtResource("15_6uts5")]
+transform = Transform3D(0.12304948, 0, 0.9924005, 0, 1, 0, -0.9924005, 0, 0.12304948, 36.99, 0, -8.979627)
+
+[node name="ship-wreck2" parent="Ilha03" unique_id=89953003 instance=ExtResource("27_06c78")]
+transform = Transform3D(0.83093, 0, -0.55637693, 0.032004368, 0.9983442, 0.04779743, 0.5554557, -0.057522815, 0.82955414, 17.497345, -1.3657922, 5.6503453)
+
+[node name="palm-straight2" parent="Ilha03" unique_id=1293829419 instance=ExtResource("21_hp87i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.661499, 0.5696416, -40.614517)
+
+[node name="cannon-mobile3" parent="Ilha03" unique_id=1922571121 instance=ExtResource("47_tve3g")]
+transform = Transform3D(-0.9883789, 0, 0.15201052, 0, 1, 0, -0.15201052, 0, -0.9883789, 9.227615, 0.7317989, -40.55873)
+
+[node name="rocks-c2" parent="Ilha03" unique_id=1205121542 instance=ExtResource("13_3pobi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9149723, 0)
+
+[node name="castle-wall2" parent="Ilha03" unique_id=300916592 instance=ExtResource("48_k8hbe")]
+transform = Transform3D(0.50211895, -1.4901161e-08, 0.8647985, 0.18478699, 0.9769045, -0.10729093, -0.8448256, 0.21367633, 0.49052224, 11.668494, 1.1357342, -5.192451)
+
+[node name="palm-bend2" parent="Ilha03" unique_id=691224742 instance=ExtResource("5_gp26t")]
+transform = Transform3D(0.25416043, 0, 0.967162, 0, 1, 0, -0.967162, 0, 0.25416043, 21.544922, 1.56144, -23.53376)
+
+[node name="palm-detailed-straight2" parent="Ilha03" unique_id=136150625 instance=ExtResource("7_kegdj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.579926, 1.3162007, -18.02053)
+
+[node name="palm-detailed-bend2" parent="Ilha03" unique_id=165903870 instance=ExtResource("17_a0o4f")]
+transform = Transform3D(0.8103659, 0, -0.58592415, 0, 1, 0, 0.58592415, 0, 0.8103659, 24.384537, 1.5351224, -9.426804)
+
+[node name="castle-gate2" parent="Ilha03" unique_id=60823768 instance=ExtResource("49_7i6rq")]
+transform = Transform3D(-0.24831584, 0, 0.9686792, 0, 1, 0, -0.9686792, 0, -0.24831584, 11.217122, 1.366858, -16.703959)
+
+[node name="patch-sand-foliage2" parent="Ilha03" unique_id=297744915 instance=ExtResource("28_8hsfy")]
+transform = Transform3D(2.2734313, 0, 1.9574243, 0, 3, 0, -1.9574243, 0, 2.2734313, 16.359571, 0, 4.3621464)
+
+[node name="patch-grass-foliage2" parent="Ilha03" unique_id=124728919 instance=ExtResource("4_w224a")]
+transform = Transform3D(6.220047, 0, 3.2110772, 0, 7, 0, -3.2110772, 0, 6.220047, 0, 0, 0)
+
+[node name="patch-grass-foliage3" parent="Ilha03" unique_id=227008358 instance=ExtResource("4_w224a")]
+transform = Transform3D(1.0374789, 0, 6.9226904, 0, 7, 0, -6.9226904, 0, 1.0374789, -0.34336057, 0, -21.96881)
+
+[node name="patch-grass-foliage4" parent="Ilha03" unique_id=610443657 instance=ExtResource("4_w224a")]
+transform = Transform3D(6.494511, 0, -4.6713305, 0, 8, 0, 4.6713305, 0, 6.494511, 18.86603, -0.24832726, -15.1607065)
+
+[node name="patch-sand-foliage3" parent="Ilha03" unique_id=1602282823 instance=ExtResource("28_8hsfy")]
+transform = Transform3D(-1.0003841, 0, 2.8282912, 0, 3, 0, -2.8282912, 0, -1.0003841, 11.962529, 0, -34.73564)
+
+[node name="Castelo" type="Node3D" parent="Ilha03" unique_id=833352115]
+transform = Transform3D(0.910351, 0, -0.4138371, 0, 1, 0, 0.4138371, 0, 0.910351, -9.558321, 0, -4.345124)
+
+[node name="tower-complete-large2" parent="Ilha03/Castelo" unique_id=1441563740 instance=ExtResource("50_06ir7")]
+transform = Transform3D(0.64146286, 0, -0.7671541, 0, 1, 0, 0.7671541, 0, 0.64146286, 15.842377, 1.3731894, -17.66249)
+
+[node name="flag-pennant2" parent="Ilha03/Castelo/tower-complete-large2" unique_id=1372727240 instance=ExtResource("34_dgmyu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.667954, 0)
+
+[node name="tower-complete-small2" parent="Ilha03/Castelo" unique_id=392997374 instance=ExtResource("51_m7460")]
+transform = Transform3D(0.6320422, 0, -0.7749339, 0, 1, 0, 0.7749339, 0, 0.6320422, 12.105848, 1.5498791, -22.75012)
+
+[node name="flag-pennant2" parent="Ilha03/Castelo" unique_id=1698569223 instance=ExtResource("34_dgmyu")]
+transform = Transform3D(0.83148265, -0.5555507, 0, 0.5555507, 0.83148265, 0, 0, 0, 1, -0.6143632, 7.9196706, 1.4148599)
+
+[node name="Wall" type="Node3D" parent="Ilha03/Castelo" unique_id=1942586820]
+
+[node name="castle-wall2" parent="Ilha03/Castelo/Wall" unique_id=1118154099 instance=ExtResource("48_k8hbe")]
+transform = Transform3D(-0.6336576, 0, 0.7736136, 0, 1, 0, -0.7736136, 0, -0.6336576, 17.051773, 1.5351362, -15.585205)
+
+[node name="castle-wall3" parent="Ilha03/Castelo/Wall" unique_id=1569432369 instance=ExtResource("48_k8hbe")]
+transform = Transform3D(-0.6336576, 0, 0.7736136, 0, 1, 0, -0.7736136, 0, -0.6336576, 18.261826, 1.5351362, -14.10788)
+
+[node name="castle-wall4" parent="Ilha03/Castelo/Wall" unique_id=1889617898 instance=ExtResource("48_k8hbe")]
+transform = Transform3D(-0.6336576, 0, 0.7736136, 0, 1, 0, -0.7736136, 0, -0.6336576, 19.500908, 1.5351362, -12.595139)
+
+[node name="Wall" type="Node3D" parent="Ilha03/Castelo/Wall" unique_id=411282517]
+transform = Transform3D(0.99544203, 0.09467747, -0.011463, -0.09468369, 0.9955074, -1.1641532e-10, 0.011411502, 0.0010853593, 0.9999343, -0.7074606, 0, 10.876086)
+
+[node name="castle-wall2" parent="Ilha03/Castelo/Wall/Wall" unique_id=426129564 instance=ExtResource("48_k8hbe")]
+transform = Transform3D(-0.6336576, 0, 0.7736136, 0, 1, 0, -0.7736136, 0, -0.6336576, 17.051773, 1.5351362, -15.585205)
+
+[node name="castle-wall3" parent="Ilha03/Castelo/Wall/Wall" unique_id=1027080756 instance=ExtResource("48_k8hbe")]
+transform = Transform3D(-0.6336576, 0, 0.7736136, 0, 1, 0, -0.7736136, 0, -0.6336576, 18.261826, 1.5351362, -14.10788)
+
+[node name="castle-wall4" parent="Ilha03/Castelo/Wall/Wall" unique_id=1869714123 instance=ExtResource("48_k8hbe")]
+transform = Transform3D(-0.6336576, 0, 0.7736136, 0, 1, 0, -0.7736136, 0, -0.6336576, 19.500908, 1.5351362, -12.595139)
+
+[node name="Wall2" type="Node3D" parent="Ilha03/Castelo" unique_id=976769426]
+transform = Transform3D(0.011388093, 0, 0.99993515, 0, 1, 0, -0.99993515, 0, 0.011388093, 22.874462, 0.40469933, -1.1636555)
+
+[node name="castle-wall2" parent="Ilha03/Castelo/Wall2" unique_id=957614886 instance=ExtResource("48_k8hbe")]
+transform = Transform3D(-0.6336576, 0, 0.7736136, 0, 1, 0, -0.7736136, 0, -0.6336576, 17.051773, 1.5351362, -15.585205)
+
+[node name="castle-wall3" parent="Ilha03/Castelo/Wall2" unique_id=844038268 instance=ExtResource("48_k8hbe")]
+transform = Transform3D(-0.6336576, 0, 0.7736136, 0, 1, 0, -0.7736136, 0, -0.6336576, 18.261826, 1.5351362, -14.10788)
+
+[node name="castle-wall4" parent="Ilha03/Castelo/Wall2" unique_id=741835951 instance=ExtResource("48_k8hbe")]
+transform = Transform3D(-0.6336576, 0, 0.7736136, 0, 1, 0, -0.7736136, 0, -0.6336576, 19.500908, 1.5351362, -12.595139)
+
+[node name="tower-complete-large3" parent="Ilha03/Castelo" unique_id=1575728869 instance=ExtResource("50_06ir7")]
+transform = Transform3D(0.17986393, -0.51398957, -0.8387275, 0.068888664, 0.8571207, -0.5104884, 0.9812764, 0.034039542, 0.1895732, 4.4390993, -0.30680513, 1.0530577)
+
+[node name="tower-complete-small3" parent="Ilha03/Castelo" unique_id=650927689 instance=ExtResource("51_m7460")]
+transform = Transform3D(0.5864585, 0.23567727, -0.7749338, -0.37288213, 0.92787874, 0, 0.7190446, 0.28895903, 0.63204217, 9.71578, -0.5838661, -8.597177)
+
+[node name="Wall3" type="Node3D" parent="Ilha03/Castelo" unique_id=1843855249]
+transform = Transform3D(0.8871339, 0, 0.46151218, 0, 1, 0, -0.46151218, 0, 0.8871339, -10.239314, -0.74570465, 6.086009)
+
+[node name="castle-wall2" parent="Ilha03/Castelo/Wall3" unique_id=774690972 instance=ExtResource("48_k8hbe")]
+transform = Transform3D(-0.023447692, 0, 0.999725, 0, 1, 0, -0.999725, 0, -0.023447692, 17.037985, 1.5351362, -16.173046)
+
+[node name="castle-wall3" parent="Ilha03/Castelo/Wall3" unique_id=1788857922 instance=ExtResource("48_k8hbe")]
+transform = Transform3D(-0.6336576, 0, 0.7736136, 0, 1, 0, -0.7736136, 0, -0.6336576, 18.261826, 1.5351362, -14.10788)
+
+[node name="castle-wall4" parent="Ilha03/Castelo/Wall3" unique_id=657717473 instance=ExtResource("48_k8hbe")]
+transform = Transform3D(-0.6336576, 0, 0.7736136, 0, 1, 0, -0.7736136, 0, -0.6336576, 19.500908, 1.5351362, -12.595139)
+
+[node name="Wall" type="Node3D" parent="Ilha03/Castelo/Wall3" unique_id=819314099]
+transform = Transform3D(0.99544203, 0.09467747, -0.011463, -0.09468369, 0.9955074, -1.1641532e-10, 0.011411502, 0.0010853593, 0.9999343, -0.7074606, 0, 10.876086)
+
+[node name="castle-wall2" parent="Ilha03/Castelo/Wall3/Wall" unique_id=2128975971 instance=ExtResource("48_k8hbe")]
+transform = Transform3D(-0.98828137, 0, 0.15264308, 0, 1, 0, -0.15264308, 0, -0.98828137, 17.051773, 1.5351362, -15.585205)
+
+[node name="castle-wall3" parent="Ilha03/Castelo/Wall3/Wall" unique_id=1821717268 instance=ExtResource("48_k8hbe")]
+transform = Transform3D(-0.6336576, 0, 0.7736136, 0, 1, 0, -0.7736136, 0, -0.6336576, 18.261826, 1.5351362, -14.10788)
+
+[node name="castle-wall4" parent="Ilha03/Castelo/Wall3/Wall" unique_id=981340282 instance=ExtResource("48_k8hbe")]
+transform = Transform3D(-0.6336576, 0, 0.7736136, 0, 1, 0, -0.7736136, 0, -0.6336576, 19.500908, 1.5351362, -12.595139)
+
+[node name="tower-complete-small4" parent="Ilha03/Castelo" unique_id=541213513 instance=ExtResource("51_m7460")]
+transform = Transform3D(0.4485173, 0.18107337, -0.8752396, 0.55099165, 0.7150271, 0.43028396, 0.7037331, -0.6752397, 0.22093216, 9.302969, 0.29983234, 8.4983835)
+
+[node name="rocks-a2" parent="Ilha03" unique_id=647515115 instance=ExtResource("11_1cipv")]
+transform = Transform3D(0.7560438, 0, -0.654521, 0, 1, 0, 0.654521, 0, 0.7560438, 0, 1.0161905, -12.056213)
+
+[node name="rocks-b2" parent="Ilha03" unique_id=453718113 instance=ExtResource("52_nisqy")]
+transform = Transform3D(0.8697151, 0.4935541, 0, -0.4935541, 0.8697151, 0, 0, 0, 1, -6.801372, 0.38351345, -16.631973)
+
+[node name="cannon-mobile2" parent="Ilha03" unique_id=196286465 instance=ExtResource("47_tve3g")]
+transform = Transform3D(-0.07982067, 0, 0.99680924, 0, 1, 0, -0.99680924, 0, -0.07982067, 30.775415, 1.6351457, -8.872629)
+
+[node name="palm-detailed-bend3" parent="Ilha03" unique_id=909610593 instance=ExtResource("17_a0o4f")]
+transform = Transform3D(0.8103659, 0, -0.58592415, 0, 1, 0, 0.58592415, 0, 0.8103659, 14.007957, 0.3815117, -35.605915)
+
+[node name="ColisaoIlha" type="StaticBody3D" parent="Ilha03" unique_id=1699735441]
+
+[node name="CollisionPolygon3D" type="CollisionPolygon3D" parent="Ilha03/ColisaoIlha" unique_id=1956280200]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0.4715929, 0)
+depth = 2.0
+polygon = PackedVector2Array(12.654846, 48.329735, 14.159637, 44.668816, 16.923035, 42.143272, 18.56604, 41.157463, 18.730347, 39.021553, 18.56604, 36.721336, 19.55185, 33.928215, 21.030563, 31.62799, 22.509277, 29.820679, 24.973785, 27.684761, 26.616806, 26.206047, 28.424133, 25.220245, 31.21724, 23.577232, 32.367355, 22.262825, 33.35315, 19.798302, 33.681763, 17.662384, 33.681763, 14.212059, 35.240463, 10.430115, 37.903473, 9.63121, 37.814697, 8.3884735, 35.86183, 7.500801, 34.79663, 3.9501266, 32.86026, 2.38237, 30.560028, 1.2322617, 27.602615, 0.903656, 25.795288, 0.41075134, 25.630997, -1.3965607, 24.152283, -4.189682, 23.659393, -5.832695, 22.180664, -8.132912, 20.537659, -9.447327, 18.730347, -10.597443, 16.430115, -11.418945, 11.66539, -11.418945, 8.872269, -11.090347, 6.2434387, -10.433136, 4.436142, -12.404755, 0.8215027, -13.390564, -1.3144073, -14.04776, -2.3002167, -15.362183, -5.093338, -16.840881, -8.379364, -16.67659, -9.200867, -15.526474, -9.365173, -13.390564, -7.8864594, -10.433136, -8.872269, -8.625816, -10.843872, -7.475708, -12.486908, -6.8185043, -15.772919, -5.9970016, -16.265823, -3.5324783, -15.772919, -1.067955, -14.622803, 1.2322617, -13.308411, 3.6967773, -12.158295, 6.9828033, -9.858078, 8.461517, -7.8864594, 10.268829, -9.858078, 11.747536, -10.843872, 13.554855, -12.158295, 16.512276, -13.144104, 17.826683, -12.158295, 21.112709, -10.843872, 23.90583, -11.008179, 26.041748, -10.022369, 30.477882, -7.229248, 31.62799, -5.5862427, 33.106705, -4.2718353, 35.078316, -2.7931213, 36.22843, 0, 38.692947, 1.807312, 41.48607, 4.27182, 41.48607, 5.914856, 40.50026, 7.736191, 42.041046, 9.083771, 44.24209, 10.54364, 47.880547)
+
+[node name="structure-platform-dock3" parent="Ilha03" unique_id=1453297729 instance=ExtResource("22_5040k")]
+transform = Transform3D(0.99194837, 0, 0.12664312, 0, 1, 0, -0.12664312, 0, 0.99194837, 11.726059, 0, -47.064568)
+
+[node name="flag-pirate-high2" parent="Ilha03" unique_id=1114449795 instance=ExtResource("14_u7253")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 18.528076, 1.6773682, -11.966064)
+
+[node name="NavioGrandeJogador" parent="." unique_id=686324958 instance=ExtResource("2_a0dn4")]
+transform = Transform3D(-0.9884846, 0, -0.15132132, 0, 1, 0, 0.15132132, 0, -0.9884846, -186.04341, 0, 60.742035)
+vida_maxima = 125
+
+[connection signal="pressed" from="HUD/TelaGameOver/ConteudoGameOver/BotaoReiniciar" to="HUD" method="_on_botao_reiniciar_pressed"]
+[connection signal="pressed" from="HUD/TelaVitoria/ConteudoVitoria/BotaoRejogarBatalha" to="HUD" method="_on_botao_reiniciar_pressed"]
+[connection signal="pressed" from="HUD/TelaVitoria/ConteudoVitoria/BotaoReiniciar2" to="HUD" method="_on_botao_reiniciar_pressed"]
+[connection signal="pressed" from="HUD/TelaInstrucoes/ConteudoInstrucoes/BotaoEntendido" to="HUD" method="_on_botao_entendido_pressed"]
