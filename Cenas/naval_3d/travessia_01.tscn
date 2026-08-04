@@ -103,7 +103,7 @@ size = Vector3(2.5859375, 1.5369873, 2.6625977)
 environment = SubResource("Environment_blkgo")
 
 [node name="Oceano" type="MeshInstance3D" parent="." unique_id=1354484614]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.013809204, 0.070043944, 0.12601471)
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, 0.013809204, 0.070043944, 0.12601471)
 material_override = SubResource("ShaderMaterial_j7631")
 mesh = SubResource("PlaneMesh_sb1gb")
 
