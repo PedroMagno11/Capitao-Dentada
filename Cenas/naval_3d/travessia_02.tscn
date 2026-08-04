@@ -109,7 +109,7 @@ transform = Transform3D(0.31059238, 0, 0.95054317, 0, 1, 0, -0.95054317, 0, 0.31
 environment = SubResource("Environment_blkgo")
 
 [node name="Oceano" type="MeshInstance3D" parent="." unique_id=1354484614]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0.013809204, 0.070043944, 0.12601471)
+transform = Transform3D(5, 0, 0, 0, 3, 0, 0, 0, 5, 0.013809204, 0.070043944, 0.12601471)
 material_override = SubResource("ShaderMaterial_j7631")
 mesh = SubResource("PlaneMesh_sb1gb")
 
@@ -660,7 +660,7 @@ polygon = PackedVector2Array(12.651199, 45.4293, 14.951416, 43.45768, 16.923035,
 [node name="PortoEntrada" type="Area3D" parent="Ilha03" unique_id=1589046392]
 transform = Transform3D(0.9927315, 0.07156735, -0.09675924, -0.07819818, 0.9947131, -0.066565305, 0.09148386, 0.07364792, 0.99307936, 36.571564, 0.8233549, -8.62435)
 script = ExtResource("41_45vl3")
-cena_destino = "uid://v6sp4bpoc2gw"
+cena_destino = "uid://cns3y6ssmay3d"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ilha03/PortoEntrada" unique_id=342321379]
 transform = Transform3D(0.99937, -0.035321206, -0.0028159097, 0.03543358, 0.9967177, 0.0726495, 0.00024066865, -0.07270373, 0.9973516, 0.29455566, 0.2266531, -0.41857147)
