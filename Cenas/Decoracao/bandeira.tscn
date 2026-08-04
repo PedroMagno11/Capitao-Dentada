@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://du8x7hqqe5wdc"]
+
+[ext_resource type="Texture2D" uid="uid://bmfd3oo1b03q0" path="res://Assets/Palm Tree Island/Sprites/Objects/Flag/Flag 01.png" id="1_aftpl"]
+[ext_resource type="Texture2D" uid="uid://bpmaccbbg2xfu" path="res://Assets/Palm Tree Island/Sprites/Objects/Flag/Flag 02.png" id="2_8rmdq"]
+[ext_resource type="Texture2D" uid="uid://c02aiospf4dt4" path="res://Assets/Palm Tree Island/Sprites/Objects/Flag/Flag 03.png" id="3_uxtgb"]
+[ext_resource type="Texture2D" uid="uid://vj4dee804h4l" path="res://Assets/Palm Tree Island/Sprites/Objects/Flag/Flag 04.png" id="4_y38fh"]
+[ext_resource type="Texture2D" uid="uid://bchhhywkwgih" path="res://Assets/Palm Tree Island/Sprites/Objects/Flag/Flag 05.png" id="5_fr5a4"]
+[ext_resource type="Texture2D" uid="uid://c2id3q6oqnyea" path="res://Assets/Palm Tree Island/Sprites/Objects/Flag/Flag 06.png" id="6_m47m1"]
+[ext_resource type="Texture2D" uid="uid://wt5fnpcsulnj" path="res://Assets/Palm Tree Island/Sprites/Objects/Flag/Flag 07.png" id="7_ud430"]
+[ext_resource type="Texture2D" uid="uid://dr7tf45hyqb3p" path="res://Assets/Palm Tree Island/Sprites/Objects/Flag/Flag 08.png" id="8_kgi3c"]
+[ext_resource type="Texture2D" uid="uid://bckyjvhlmorib" path="res://Assets/Palm Tree Island/Sprites/Objects/Flag/Flag 09.png" id="9_krcvo"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_58g0o"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_aftpl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_8rmdq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_uxtgb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_y38fh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_fr5a4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_m47m1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ud430")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_kgi3c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_krcvo")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Bandeira" type="AnimatedSprite2D" unique_id=1484218170]
+sprite_frames = SubResource("SpriteFrames_58g0o")
+autoplay = "default"
+frame_progress = 0.93522775

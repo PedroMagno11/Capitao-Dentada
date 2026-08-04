@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://d030pbbtkp43o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_58g0o"]
+
+[node name="limitador" type="StaticBody2D" unique_id=1083105232]
+collision_layer = 32
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=890703672]
+shape = SubResource("RectangleShape2D_58g0o")

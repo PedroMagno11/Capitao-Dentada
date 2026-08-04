@@ -1,0 +1,123 @@
+[gd_scene format=3 uid="uid://cduwvgjm74scd"]
+
+[ext_resource type="Texture2D" uid="uid://br7tvkp0b16bw" path="res://Assets/Palm Tree Island/Sprites/Objects/Spikes/Spikes.png" id="1_2np7b"]
+[ext_resource type="Script" uid="uid://dxpcj0331n41q" path="res://Scripts/Armadilhas/spike.gd" id="1_tvlod"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_58g0o"]
+size = Vector2(31, 16)
+
+[sub_resource type="Animation" id="Animation_2np7b"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_2np7b")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-0.5, 8)]
+}
+
+[sub_resource type="Animation" id="Animation_tvlod"]
+resource_name = "hit"
+length = 0.5
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_2np7b")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -20)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CollisionShape2D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-0.5, 8), Vector2(-0.5, -12)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("AnimationPlayer:speed_scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.4]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_su2ct"]
+_data = {
+&"RESET": SubResource("Animation_2np7b"),
+&"hit": SubResource("Animation_tvlod")
+}
+
+[node name="Spike" type="Area2D" unique_id=1818618863 groups=["inimigo"]]
+collision_layer = 2
+script = ExtResource("1_tvlod")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1897386449]
+position = Vector2(-0.5, 8)
+shape = SubResource("RectangleShape2D_58g0o")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=37250862]
+texture = ExtResource("1_2np7b")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1373566518]
+libraries/ = SubResource("AnimationLibrary_su2ct")
+autoplay = &"hit"
+speed_scale = 0.4
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
