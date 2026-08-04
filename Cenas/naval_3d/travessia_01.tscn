@@ -122,7 +122,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.35873067, 0.43342936,
 [node name="pirata" parent="BoteJogador/BoteDentada" parent_id_path=PackedInt32Array(641004950, 113745794) index="2" unique_id=1458672521 instance=ExtResource("3_3ephv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.049863935, -0.9869169)
 
-[node name="Skeleton3D" parent="BoteJogador/BoteDentada/pirata/Root" parent_id_path=PackedInt32Array(1458672521, 1770591772) index="0" unique_id=1609056920]
+[node name="Skeleton3D" parent="BoteJogador/BoteDentada/pirata/Root" parent_id_path=PackedInt32Array(1458672521, 1783771867) index="0" unique_id=1234333155]
 transform = Transform3D(0.50000006, 0, 0, 0, 0.4993349, 0.02578172, 0, -0.02578172, 0.4993349, 0, 0, 0)
 bones/27/position = Vector3(-5.6643e-10, 0.0025880144, -2.5547455e-09)
 bones/27/rotation = Quaternion(0.14695145, 0.59846944, -0.44892418, 0.64707553)
@@ -143,7 +143,7 @@ bones/54/position = Vector3(3.5074665e-10, 0.00526174, 8.617078e-10)
 bones/54/rotation = Quaternion(0.57624495, 0.0063354457, -0.25572985, 0.77621126)
 bones/54/scale = Vector3(1, 1, 1)
 
-[node name="characterMedium" parent="BoteJogador/BoteDentada/pirata/Root/Skeleton3D" index="0" unique_id=1122610085]
+[node name="characterMedium" parent="BoteJogador/BoteDentada/pirata/Root/Skeleton3D" index="0" unique_id=1517032761]
 material_override = SubResource("StandardMaterial3D_cf6v5")
 
 [node name="Ilha01" type="Node3D" parent="." unique_id=1183184581]

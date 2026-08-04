@@ -128,7 +128,7 @@ func _physics_process(delta: float) -> void:
 		animar_velas()
 		return
 
-	if Input.is_action_just_pressed("atirar"):
+	if Input.is_action_just_pressed("bomba"):
 		disparar_bomba()
 
 	var acelerador: float = Input.get_axis(

@@ -711,11 +711,11 @@ text = "Rejogar batalha final"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="BotaoInicio" type="Button" parent="HUD/TelaVitoria/ConteudoVitoria" unique_id=16084632]
+[node name="BotaoReiniciar2" type="Button" parent="HUD/TelaVitoria/ConteudoVitoria" unique_id=16084632]
 custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
 
-[node name="FundoBotao" type="HBoxContainer" parent="HUD/TelaVitoria/ConteudoVitoria/BotaoInicio" unique_id=100378682]
+[node name="FundoBotao" type="HBoxContainer" parent="HUD/TelaVitoria/ConteudoVitoria/BotaoReiniciar2" unique_id=100378682]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -724,20 +724,20 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 0
 
-[node name="Inicio" type="TextureRect" parent="HUD/TelaVitoria/ConteudoVitoria/BotaoInicio/FundoBotao" unique_id=1314391037]
+[node name="Inicio" type="TextureRect" parent="HUD/TelaVitoria/ConteudoVitoria/BotaoReiniciar2/FundoBotao" unique_id=1314391037]
 layout_mode = 2
 texture = ExtResource("47_w224a")
 
-[node name="Meio" type="TextureRect" parent="HUD/TelaVitoria/ConteudoVitoria/BotaoInicio/FundoBotao" unique_id=1855144109]
+[node name="Meio" type="TextureRect" parent="HUD/TelaVitoria/ConteudoVitoria/BotaoReiniciar2/FundoBotao" unique_id=1855144109]
 layout_mode = 2
 size_flags_horizontal = 3
 texture = ExtResource("48_gp26t")
 
-[node name="Fim" type="TextureRect" parent="HUD/TelaVitoria/ConteudoVitoria/BotaoInicio/FundoBotao" unique_id=622572957]
+[node name="Fim" type="TextureRect" parent="HUD/TelaVitoria/ConteudoVitoria/BotaoReiniciar2/FundoBotao" unique_id=622572957]
 layout_mode = 2
 texture = ExtResource("49_a0dn4")
 
-[node name="TextoBotao" type="Label" parent="HUD/TelaVitoria/ConteudoVitoria/BotaoInicio" unique_id=921378082]
+[node name="TextoBotao" type="Label" parent="HUD/TelaVitoria/ConteudoVitoria/BotaoReiniciar2" unique_id=921378082]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -1032,5 +1032,5 @@ vida_maxima = 125
 
 [connection signal="pressed" from="HUD/TelaGameOver/ConteudoGameOver/BotaoReiniciar" to="HUD" method="_on_botao_reiniciar_pressed"]
 [connection signal="pressed" from="HUD/TelaVitoria/ConteudoVitoria/BotaoRejogarBatalha" to="HUD" method="_on_botao_reiniciar_pressed"]
-[connection signal="pressed" from="HUD/TelaVitoria/ConteudoVitoria/BotaoInicio" to="HUD" method="_on_botao_inicio_pressed"]
+[connection signal="pressed" from="HUD/TelaVitoria/ConteudoVitoria/BotaoReiniciar2" to="HUD" method="_on_botao_reiniciar_pressed"]
 [connection signal="pressed" from="HUD/TelaInstrucoes/ConteudoInstrucoes/BotaoEntendido" to="HUD" method="_on_botao_entendido_pressed"]

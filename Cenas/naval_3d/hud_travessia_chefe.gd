@@ -1,12 +1,14 @@
 extends CanvasLayer
 
 
+const CENA_TRAVESSIA_1: String = (
+	"res://Cenas/naval_3d/travessia_01.tscn"
+)
+
+
 @export_category("Animação")
 @export var tempo_exibicao_titulo: float = 3.0
 @export var duracao_fade: float = 0.8
-
-@export_category("Cenas")
-@export_file("*.tscn") var cena_fase_1: String = "res://Cenas/naval_3d/travessia_01.tscn"
 
 
 @onready var titulo_travessia: Label = $TituloTravessia
@@ -232,7 +234,7 @@ func ao_combate_encerrado(
 
 
 func ao_inimigo_destruido(
-	inimigo: Node3D
+	_inimigo: Node3D
 ) -> void:
 	if jogo_encerrado:
 		return
@@ -257,7 +259,6 @@ func mostrar_game_over() -> void:
 	tela_vitoria.hide()
 
 	tela_game_over.show()
-
 	get_tree().paused = true
 
 
@@ -275,28 +276,35 @@ func mostrar_vitoria() -> void:
 	tela_game_over.hide()
 
 	tela_vitoria.show()
-
 	get_tree().paused = true
 
 
+# Rejoga a batalha final.
 func _on_botao_reiniciar_pressed() -> void:
 	get_tree().paused = false
 	get_tree().reload_current_scene()
 
 
-func _on_botao_reiniciar_2_pressed() -> void:
-	get_tree().paused = false
-
-	if not ResourceLoader.exists():
-		push_error(
-			"A cena da Fase 1 (t1) não foi encontrada: ",
-			cena_fase_1
-		)
-		return
-
-	get_tree().change_scene_to_file(
-		cena_fase_1
-	)
+# Volta para a Travessia 1.
+#func _on_botao_reiniciar_2_pressed() -> void:
+	#if not ResourceLoader.exists(CENA_TRAVESSIA_1):
+		#push_error(
+			#"A Travessia 1 não foi encontrada: ",
+			#CENA_TRAVESSIA_1
+		#)
+		#return
+#
+	#get_tree().paused = false
+#
+	#var erro: Error = get_tree().change_scene_to_file(
+		#CENA_TRAVESSIA_1
+	#)
+#
+	#if erro != OK:
+		#push_error(
+			#"Não foi possível abrir a Travessia 1. Código: ",
+			#erro
+		#)
 
 func _on_botao_entendido_pressed() -> void:
 	tela_instrucoes.hide()
@@ -307,3 +315,17 @@ func _on_botao_entendido_pressed() -> void:
 
 	get_tree().paused = false
 	iniciar_animacao_hud()
+
+# Volta para a Travessia 1 NEW
+func _on_botao_inicio_pressed() -> void:
+	get_tree().paused = false
+
+	var erro: Error = get_tree().change_scene_to_file(
+		CENA_TRAVESSIA_1
+	)
+
+	if erro != OK:
+		push_error(
+			"Não foi possível abrir a Travessia 1. Código: ",
+			erro
+		)
