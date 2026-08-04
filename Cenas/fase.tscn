@@ -10,8 +10,9 @@
 [ext_resource type="PackedScene" uid="uid://du8x7hqqe5wdc" path="res://Cenas/Decoracao/bandeira.tscn" id="9_28alh"]
 [ext_resource type="PackedScene" uid="uid://cfn4i4qmj3yat" path="res://Cenas/Tesouro/moeda.tscn" id="9_x1v8p"]
 [ext_resource type="PackedScene" uid="uid://ddbqdyiba2t1p" path="res://Cenas/Tesouro/bau.tscn" id="10_x1v8p"]
+[ext_resource type="PackedScene" uid="uid://dchn33rwnrssk" path="res://Cenas/inimigos/almirante_cedro.tscn" id="11_ilgdx"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_51e0a"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jye6u"]
 texture = ExtResource("2_mij0q")
 texture_region_size = Vector2i(32, 32)
 1:0/0 = 0
@@ -398,7 +399,7 @@ physics_layer_0/collision_mask = 11
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "Terrain 0"
 terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
-sources/0 = SubResource("TileSetAtlasSource_51e0a")
+sources/0 = SubResource("TileSetAtlasSource_jye6u")
 
 [sub_resource type="LabelSettings" id="LabelSettings_58g0o"]
 shadow_size = 4
@@ -448,11 +449,9 @@ position = Vector2(767, 360)
 
 [node name="Bandeira" parent="Bandeiras" unique_id=1484218170 instance=ExtResource("9_28alh")]
 position = Vector2(-56, 434)
-autoplay = "default"
 
 [node name="Bandeira2" parent="Bandeiras" unique_id=550128595 instance=ExtResource("9_28alh")]
 position = Vector2(433, 435)
-autoplay = "default"
 
 [node name="Moeda" parent="." unique_id=408293983 instance=ExtResource("9_x1v8p")]
 position = Vector2(77, 472)
@@ -473,3 +472,6 @@ offset_right = 83.0
 offset_bottom = 33.0
 text = "Moedas: 0"
 label_settings = SubResource("LabelSettings_58g0o")
+
+[node name="Almirante_Cedro" parent="." unique_id=760743377 instance=ExtResource("11_ilgdx")]
+position = Vector2(212, 512)

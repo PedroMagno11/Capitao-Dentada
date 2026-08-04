@@ -27,6 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://ddrayvpnmu8fg" path="res://Assets/Captain Clown Nose/Sprites/Captain Clown Nose/Captain Clown Nose with Sword/09-Idle Sword/Idle Sword 05.png" id="23_7aq2i"]
 [ext_resource type="Texture2D" uid="uid://cx5e22wox8dyw" path="res://Assets/Palm Tree Island/Sprites/Terrain/Terrain (32x32).png" id="24_yio0x"]
 [ext_resource type="PackedScene" uid="uid://bunaohpm5v8uc" path="res://Cenas/Decoracao/background.tscn" id="27_5o3fg"]
+[ext_resource type="PackedScene" uid="uid://bn37jegrhmwmi" path="res://Cenas/Decoracao/palmeira.tscn" id="28_xd8hg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w1mgn"]
 texture = ExtResource("24_yio0x")
@@ -555,6 +556,9 @@ position = Vector2(41, 403)
 
 [node name="Bau" parent="Ambiente/terreno" unique_id=758122407 instance=ExtResource("4_xd8hg")]
 position = Vector2(378, 432)
+
+[node name="Palmeira" parent="Ambiente/terreno" unique_id=724852650 instance=ExtResource("28_xd8hg")]
+position = Vector2(334, 417)
 
 [node name="barco" type="AnimatedSprite2D" parent="Ambiente" unique_id=2003215682]
 position = Vector2(897.00006, 472.99997)
